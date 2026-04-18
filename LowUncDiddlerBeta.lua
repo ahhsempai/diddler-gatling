@@ -1,116 +1,702 @@
--- pls no skid :333333 or fuck me in discord:3 (im little e-kitten)
-( function (...) local function _lIllIlIIIl(title, text, duration) duration = duration or 0x5 pcall( function () game:GetService("\083\116\097\114\116\101\114\071\117\105"):SetCore("\083\101\110\100\078\111\116\105\102\105\099\097\116\105\111\110", { Title = title, Text = text, Duration = duration, }) end
- ) end
- local _llIlllIlII = { { name = "\103\101\116\103\101\110\118", fn = function () return type(getgenv) == "\102\117\110\099\116\105\111\110" end
- }, { name = "\082\101\109\111\116\101\069\118\101\110\116", fn = function () local _IlIlIllIlI = pcall( function () local _IIlIlllIII = Instance.new("\082\101\109\111\116\101\069\118\101\110\116"); _IIlIlllIII:Destroy() end
- ) return _IlIlIllIlI end
- }, } for _IIllllllIl, check in ipairs(_llIlllIlII) do local _IlIlIllIlI = pcall(check.fn) if not _IlIlIllIlI then _lIllIlIIIl("\071\097\116\108\105\110\103\058\032\078\111\116\032\076\111\097\100\101\100", "\069\120\101\099\117\116\111\114\032\109\105\115\115\105\110\103\058\032" .. check.name, 0x8) error("\091\071\097\116\108\105\110\103\093\032\067\104\101\099\107\032\102\097\105\108\101\100\058\032" .. check.name) return end
- end
- local UserInputService = game:GetService("\085\115\101\114\073\110\112\117\116\083\101\114\118\105\099\101") local _IIIIlIlIlI = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled local Players = game:GetService("\080\108\097\121\101\114\115") local ReplicatedStorage = game:GetService("\082\101\112\108\105\099\097\116\101\100\083\116\111\114\097\103\101") local _IIllIlIIIl = game:GetService("\087\111\114\107\115\112\097\099\101") local RunService = game:GetService("\082\117\110\083\101\114\118\105\099\101") local TweenService = game:GetService("\084\119\101\101\110\083\101\114\118\105\099\101") local _IllIllllII = Players.LocalPlayer local _lIIIIIlIII = ReplicatedStorage:WaitForChild("\078\101\116\119\111\114\107", 0xA) local _llIIlIIIIl = _lIIIIIlIII and _lIIIIIlIII:WaitForChild("\071\097\116\108\105\110\103\071\117\110", 0xA) local _IIllllIIIl = _llIIlIIIIl and _llIIlIIIIl:WaitForChild("\082\069\058\082\101\108\111\097\100", 0xA) local _lIIlIlIIlI = _llIIlIIIIl and _llIIlIIIIl:WaitForChild("\082\069\058\070\105\114\101", 0xA) local _IIlIlIlIlI = _llIIlIIIIl and _llIIlIIIIl:WaitForChild("\085\082\069\058\082\101\112\108\105\099\097\116\101\065\105\109\080\111\115\105\116\105\111\110", 0xA) local _llllllIIll = ReplicatedStorage:WaitForChild("\082\101\109\111\116\101\070\117\110\099\116\105\111\110", 0xA) if not _IIllllIIIl or not _lIIlIlIIlI or not _llllllIIll then _lIllIlIIIl("\078\111\116\032\102\111\117\110\100\032\114\101\109\111\116\101\115\046\046\046\032\109\097\121\032\098\101\032\115\117\114\101\032\116\104\097\116\032\103\097\116\108\105\110\103\032\105\115\032\111\110\032\116\104\101\032\103\114\111\117\110\100", 0xA) error("\091\071\097\116\108\105\110\103\093\032\082\101\109\111\116\101\115\032\110\111\116\032\102\111\117\110\100") return end
- getgenv().gatlingcooldown = 0.15 getgenv().multiplytimes = 0x1 getgenv().auto_fire = false getgenv().fps_mode = false getgenv().targetMode = 0x1 getgenv().showChams = true getgenv().towerRange = 0x32 local _IIIlIlllII = getgenv().multiplytimes local _lIlIIIIIIl = getgenv().gatlingcooldown local _llIIlllIII = {} local _lllIlIlllI = _IIllIlIIIl:WaitForChild("\078\080\067\115") local _lIIIIlIlIl = {} local _IlIIIIIIIl = false local _llllllIIll = 0x0 local _llIlIlllll = nil local function _lIIIIIIllI() local _lIlIllIIll = _IllIllllII.Character if not _lIlIllIIll then return false end
- local _IIIlIIIIII = _lIlIllIIll:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116") if not _IIIlIIIIII then return false end
- local _lIIlIlIllI = _IIIlIIIIII.Position if _llIlIlllll then local _IIlIllIlIl = (_lIIlIlIllI - _llIlIlllll).Magnitude _llIlIlllll = _lIIlIlIllI return _IIlIllIlIl > 0.15 end
- _llIlIlllll = _lIIlIlIllI return false end
- local _lIIIIllIll = nil local _lIIIllIIIl = nil local _lllIllllII = 0x10 RunService.Heartbeat:Connect( function (dt) if getgenv().fps_mode and _lIIIIllIll and _IIlIlIlIlI then local _lIIIIIlIIl = _lIIIIllIll and _lIIIIllIll.Parent and getEnemyRoot(_lIIIIllIll) if _lIIIIIlIIl then local _IIlllIlIll = _lIIIIIlIIl.Position local _IlllIIIIIl = Vector3.new(_IIlllIlIll.X, _IIlllIlIll.Y + 0.5, _IIlllIlIll.Z) if _lIIIllIIIl == nil then _lIIIllIIIl = _IlllIIIIIl else local _lIIIIIIlII = math.min(0x1, dt * _lllIllllII) _lIIIllIIIl = _lIIIllIIIl:Lerp(_IlllIIIIIl, _lIIIIIIlII) end
- pcall( function () _IIlIlIlIlI:FireServer( Vector3.new(_lIIIllIIIl.X, _lIIIllIIIl.Y, _lIIIllIIIl.Z) ) end
- ) end
- elseif not getgenv().fps_mode then _lIIIllIIIl = nil _lIIIIllIll = nil end
- end
- ) local function _IIlIlIlIIl(instance, key) local _IllllIlIll = instance:GetAttribute(key) if _IllllIlIll ~= nil then return _IllllIlIll end
- local _llllllIIIl = instance:FindFirstChild(key) if _llllllIIIl and (_llllllIIIl:IsA("\066\111\111\108\086\097\108\117\101") or _llllllIIIl:IsA("\073\110\116\086\097\108\117\101") or _llllllIIIl:IsA("\078\117\109\098\101\114\086\097\108\117\101") or _llllllIIIl:IsA("\083\116\114\105\110\103\086\097\108\117\101")) then return _llllllIIIl.Value end
- return nil end
- local function _lllIlllIll() _lIIIIlIlIl = {} for _IIllllllIl, _lIIllIlIII in ipairs(_lllIlIlllI:GetChildren()) do if _lIIllIlIII:IsA("\077\111\100\101\108") then local _IllIlllIll = _lIIllIlIII:FindFirstChild("\082\111\111\116\080\111\105\110\116\101\114") if _IllIlllIll and _IllIlllIll.Value then local _lIIllllIll = _IllIlllIll.Value if _IIlIlIlIIl(_lIIllllIll, "\070\097\107\101\085\110\105\116") == false and _IIlIlIlIIl(_lIIllllIll, "\084\121\112\101") == "\069\110\101\109\105\101\115" then _lIIIIlIlIl[_lIIllIlIII] = _lIIllllIll end
- end
- end
- end
- end
- _lllIlIlllI.ChildAdded:Connect(_lllIlllIll) _lllIlIlllI.ChildRemoved:Connect(_lllIlllIll) _lllIlllIll() function getEnemyRoot(_lIIllIlIII) return _lIIllIlIII:FindFirstChild("\072\117\109\097\110\111\105\100\082\111\111\116\080\097\114\116") or _lIIllIlIII:FindFirstChild("\072\105\116\098\111\120") or _lIIllIlIII.PrimaryPart or _lIIllIlIII:FindFirstChildWhichIsA("\066\097\115\101\080\097\114\116") end
- local function _IllllIlIIl(enemy) local _lIIllllIll = _lIIIIlIlIl[enemy] if _lIIllllIll then return _IIlIlIlIIl(_lIIllllIll, "\072\101\097\108\116\104") or 0x0 end
- return 0x0 end
- local function _llllIlIlIl(enemy) local _lIIllllIll = _lIIIIlIlIl[enemy] if _lIIllllIll then local _IlllIIIlll = _lIIllllIll:FindFirstChild("\077\111\100\105\102\105\101\114\115") if _IlllIIIlll then return _IIlIlIlIIl(_IlllIIIlll, "\053") == true end
- end
- return false end
- local function _lIlIIlllII(_llllllIlIl) local _IlllIIIlll = _llllllIlIl:FindFirstChild("\077\111\100\105\102\105\101\114\115") if _IlllIIIlll then return _IIlIlIlIIl(_IlllIIIlll, "\053") == true end
- return false end
- local function _lllIIllIIl(towerData) local _lIlllIllIl = towerData.tower local _lIIllIlIII = _lIlllIllIl:FindFirstChildWhichIsA("\077\111\100\101\108") if _lIIllIlIII and _lIIllIlIII.PrimaryPart then return _lIIllIlIII.PrimaryPart.Position end
- if _lIIllIlIII then local _IlIIlIIIII = _lIIllIlIII:FindFirstChildWhichIsA("\066\097\115\101\080\097\114\116") if _IlIIlIIIII then return _IlIIlIIIII.Position end
- end
- local _IlIIlIIIII = _lIlllIllIl:FindFirstChildWhichIsA("\066\097\115\101\080\097\114\116") if _IlIIlIIIII then return _IlIIlIIIII.Position end
- local _IIIlIlIlII = towerData.replicator:GetAttribute("\080\111\115\105\116\105\111\110") if _IIIlIlIlII then return _IIIlIlIlII end
- return nil end
- local function _lllIllIIlI(_llllllIlIl) local _IIIllIlIIl = _IIlIlIlIIl(_llllllIlIl, "\068\097\109\097\103\101") or 0x19 local _lllIllIIII = _IIlIlIlIIl(_llllllIlIl, "\068\097\109\097\103\101\066\117\102\102") or 0x0 return _IIIllIlIIl * (0x1 + _lllIllIIII / 0x64) end
- local function _lIllIlIIlI() _llIIlllIII = {} for _IIllllllIl, _lIlllIllIl in ipairs(_IIllIlIIIl.Towers:GetChildren()) do local _IllllIlIIl = _lIlllIllIl:FindFirstChild("\084\111\119\101\114\082\101\112\108\105\099\097\116\111\114") if _IllllIlIIl and _IIlIlIlIIl(_IllllIlIIl, "\078\097\109\101") == "\071\097\116\108\105\110\103\032\071\117\110" and (_IIlIlIlIIl(_IllllIlIIl, "\079\119\110\101\114\073\100") == _IllIllllII.UserId or _IIlIlIlIIl(_IllllIlIIl, "\079\119\110\101\114\078\097\109\101") == _IllIllllII.Name) then table.insert(_llIIlllIII, {_IlllIlIIIl = _lIlllIllIl, _IllllIlIIl = _IllllIlIIl}) end
- end
- end
- _lIllIlIIlI() _IIllIlIIIl.Towers.ChildAdded:Connect( function (child) task.wait(0.3) _lIllIlIIlI() end
- ) function toggleFPS(enabled) for _IIllllllIl, towerData in ipairs(_llIIlllIII) do local _IlllIlIIIl = towerData.tower local _llllIIIIIl = { "\084\114\111\111\112\115", "\065\098\105\108\105\116\105\101\115", "\065\099\116\105\118\097\116\101", { Troop = _IlllIlIIIl, Name = "\070\080\083", Data = { enabled = enabled } } } pcall( function () _llllllIIll:InvokeServer(unpack(_llllIIIIIl)) end
- ) task.wait(0.08) end
- getgenv().fps_mode = enabled if not enabled then _lIIIllIIIl = nil _lIIIIllIll = nil end
- end
- local function _IlIlIlIlll() local _lllllllllI, timeNow = pcall( function () return _IIllIlIIIl:GetServerTimeNow() end
- ) return _lllllllllI and timeNow or os.clock() end
- local _IIlIIIIIlI = _IIllIlIIIl:GetAttribute("\083\121\110\099") or 0xD1B _IIllIlIIIl:GetAttributeChangedSignal("\083\121\110\099"):Connect( function () _IIlIIIIIlI = _IIllIlIIIl:GetAttribute("\083\121\110\099") or _IIlIIIIIlI end
- ) local _IlIlIIIIlI = Instance.new("\083\099\114\101\101\110\071\117\105") _IlIlIIIIlI.Name = "\068\105\100\100\108\101\114\071\097\116\108\105\110\103" _IlIlIIIIlI.ResetOnSpawn = false _IlIlIIIIlI.IgnoreGuiInset = true _IlIlIIIIlI.Parent = _IllIllllII:WaitForChild("\080\108\097\121\101\114\071\117\105") local _IlIIIIIlII = Instance.new("\070\114\097\109\101") _IlIIIIIlII.Size = _IIIIlIlIlI and UDim2.new(0x0, 0x10E, 0x0, 0x156) or UDim2.new(0x0, 0xF0, 0x0, 0x1B0) _IlIIIIIlII.Position = UDim2.new(0.5, 0x0, 0.5, 0x0) _IlIIIIIlII.AnchorPoint = Vector2.new(0.5, 0.5) _IlIIIIIlII.BackgroundColor3 = Color3.fromRGB(0xC, 0x8, 0x16) _IlIIIIIlII.BorderSizePixel = 0x0 _IlIIIIIlII.Parent = _IlIlIIIIlI local _lIIIIIIIII = Instance.new("\085\073\067\111\114\110\101\114") _lIIIIIIIII.CornerRadius = UDim.new(0x0, 0xE) _lIIIIIIIII.Parent = _IlIIIIIlII local _llIIIIIIlI = Instance.new("\070\114\097\109\101") _llIIIIIIlI.Size = _IIIIlIlIlI and UDim2.new(0x0, 0x114, 0x0, 0x15C) or UDim2.new(0x0, 0xF6, 0x0, 0x1B6) _llIIIIIIlI.Position = UDim2.new(0.5, 0x0, 0.5, 0x0) _llIIIIIIlI.AnchorPoint = Vector2.new(0.5, 0.5) _llIIIIIIlI.BackgroundColor3 = Color3.fromRGB(0xFF, 0xFF, 0xFF) _llIIIIIIlI.BackgroundTransparency = 0x0 _llIIIIIIlI.BorderSizePixel = 0x0 _llIIIIIIlI.ZIndex = 0x0 _llIIIIIIlI.Parent = _IlIlIIIIlI local _IIlIIllIII = Instance.new("\085\073\067\111\114\110\101\114") _IIlIIllIII.CornerRadius = UDim.new(0x0, 0x10) _IIlIIllIII.Parent = _llIIIIIIlI local _lIllIllIll = Instance.new("\085\073\071\114\097\100\105\101\110\116") _lIllIllIll.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0x0, Color3.fromRGB(0x6, 0x0, 0xE)), ColorSequenceKeypoint.new(0.3, Color3.fromRGB(0x82, 0x32, 0xF0)), ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0xC8, 0x6E, 0xFF)), ColorSequenceKeypoint.new(0.7, Color3.fromRGB(0x5A, 0x1E, 0xB4)), ColorSequenceKeypoint.new(0x1, Color3.fromRGB(0x6, 0x0, 0xE)), }) _lIllIllIll.Rotation = 0x0 _lIllIllIll.Parent = _llIIIIIIlI spawn( function () local _IIIIlIIIll = 0x0 while _llIIIIIIlI and _llIIIIIIlI.Parent do _IIIIlIIIll = (_IIIIlIIIll + 1.2) % 0x168 _lIllIllIll.Rotation = _IIIIlIIIll _llIIIIIIlI.Position = _IlIIIIIlII.Position task.wait(0.03) end
- end
- ) RunService.RenderStepped:Connect( function () if _llIIIIIIlI and _llIIIIIIlI.Parent and _IlIIIIIlII and _IlIIIIIlII.Parent then _llIIIIIIlI.Position = _IlIIIIIlII.Position end
- end
- ) local _IllIIllllI = Instance.new("\070\114\097\109\101") _IllIIllllI.Size = UDim2.new(0x1, 0x0, 0x0, 0x30) _IllIIllllI.BackgroundColor3 = Color3.fromRGB(0x14, 0xA, 0x28) _IllIIllllI.BorderSizePixel = 0x0 _IllIIllllI.Parent = _IlIIIIIlII local _IlIIlIllIl = Instance.new("\085\073\067\111\114\110\101\114") _IlIIlIllIl.CornerRadius = UDim.new(0x0, 0xE) _IlIIlIllIl.Parent = _IllIIllllI local _IlIllIllIl = Instance.new("\084\101\120\116\076\097\098\101\108") _IlIllIllIl.Size = UDim2.new(0x1, -0xA, 0x1, 0x0) _IlIllIllIl.Position = UDim2.new(0x0, 0xA, 0x0, 0x0) _IlIllIllIl.BackgroundTransparency = 0x1 _IlIllIllIl.Text = "\068\073\068\068\076\069\082\032\071\065\084\076\073\078\071" _IlIllIllIl.TextColor3 = Color3.fromRGB(0xFF, 0xFF, 0xFF) _IlIllIllIl.TextScaled = true _IlIllIllIl.Font = Enum.Font.GothamBold _IlIllIllIl.TextXAlignment = Enum.TextXAlignment.Left _IlIllIllIl.Parent = _IllIIllllI local _lIllIlIllI = 0x3E local function _IIlllllllI(parent, yOffset, labelText) local _IIllIIlIIl = Instance.new("\070\114\097\109\101") _IIllIIlIIl.Size = UDim2.new(0x1, -0x14, 0x0, 0x26) _IIllIIlIIl.Position = UDim2.new(0x0, 0xA, 0x0, yOffset) _IIllIIlIIl.BackgroundColor3 = Color3.fromRGB(0x16, 0xE, 0x2A) _IIllIIlIIl.BorderSizePixel = 0x0 _IIllIIlIIl.Parent = parent local _IIIlIIllIl = Instance.new("\085\073\067\111\114\110\101\114") _IIIlIIllIl.CornerRadius = UDim.new(0x0, 0x8) _IIIlIIllIl.Parent = _IIllIIlIIl local _llIIIIllII = Instance.new("\084\101\120\116\076\097\098\101\108") _llIIIIllII.Size = UDim2.new(0.65, 0x0, 0x1, 0x0) _llIIIIllII.BackgroundTransparency = 0x1 _llIIIIllII.Text = labelText _llIIIIllII.TextColor3 = Color3.fromRGB(0xD2, 0xC8, 0xE6) _llIIIIllII.TextSize = 0xD _llIIIIllII.Font = Enum.Font.Gotham _llIIIIllII.TextXAlignment = Enum.TextXAlignment.Left _llIIIIllII.Position = UDim2.new(0x0, 0xC, 0x0, 0x0) _llIIIIllII.Parent = _IIllIIlIIl return _IIllIIlIIl end
- local function _lIllIlllIl(parent, _IIllIIlIIl, defaultOn) local _IlIlIlllll = defaultOn local _lIIlllIlIl = Instance.new("\070\114\097\109\101") _lIIlllIlIl.Size = UDim2.new(0x0, 0x2A, 0x0, 0x16) _lIIlllIlIl.Position = UDim2.new(0x1, -0x34, 0.5, -0xB) _lIIlllIlIl.BackgroundColor3 = _IlIlIlllll and Color3.fromRGB(0x78, 0x3C, 0xDC) or Color3.fromRGB(0x32, 0x28, 0x46) _lIIlllIlIl.BorderSizePixel = 0x0 _lIIlllIlIl.Parent = _IIllIIlIIl local _lIlIIIlIlI = Instance.new("\085\073\067\111\114\110\101\114") _lIlIIIlIlI.CornerRadius = UDim.new(0x1, 0x0) _lIlIIIlIlI.Parent = _lIIlllIlIl local _IlIIllIIIl = Instance.new("\070\114\097\109\101") _IlIIllIIIl.Size = UDim2.new(0x0, 0x10, 0x0, 0x10) _IlIIllIIIl.Position = _IlIlIlllll and UDim2.new(0x1, -0x13, 0.5, -0x8) or UDim2.new(0x0, 0x3, 0.5, -0x8) _IlIIllIIIl.BackgroundColor3 = Color3.fromRGB(0xFF, 0xFF, 0xFF) _IlIIllIIIl.BorderSizePixel = 0x0 _IlIIllIIIl.Parent = _lIIlllIlIl local _IlllIIIIIl = Instance.new("\085\073\067\111\114\110\101\114") _IlllIIIIIl.CornerRadius = UDim.new(0x1, 0x0) _IlllIIIIIl.Parent = _IlIIllIIIl local _lllIlllllI = Instance.new("\084\101\120\116\066\117\116\116\111\110") _lllIlllllI.Size = UDim2.new(0x1, 0x0, 0x1, 0x0) _lllIlllllI.BackgroundTransparency = 0x1 _lllIlllllI.Text = "" _lllIlllllI.Parent = _IIllIIlIIl local function _llllIIllll(val) _IlIlIlllll = val TweenService:Create(_lIIlllIlIl, TweenInfo.new(0.15), {BackgroundColor3 = _IlIlIlllll and Color3.fromRGB(0x8C, 0x46, 0xF0) or Color3.fromRGB(0x32, 0x28, 0x46)}):Play() TweenService:Create(_IlIIllIIIl, TweenInfo.new(0.15), {Position = _IlIlIlllll and UDim2.new(0x1, -0x13, 0.5, -0x8) or UDim2.new(0x0, 0x3, 0.5, -0x8)}):Play() end
- return _lllIlllllI, _llllIIllll, function () return _IlIlIlllll end
- end
- local function _llIllIIllI(parent, yOffset, labelText, defaultVal) local _IIllIIlIIl = _IIlllllllI(parent, yOffset, labelText) local _IllIlIIllI = Instance.new("\084\101\120\116\066\111\120") _IllIlIIllI.Size = UDim2.new(0x0, 0x3C, 0x0, 0x18) _IllIlIIllI.Position = UDim2.new(0x1, -0x48, 0.5, -0xC) _IllIlIIllI.BackgroundColor3 = Color3.fromRGB(0x1E, 0x14, 0x37) _IllIlIIllI.BorderSizePixel = 0x0 _IllIlIIllI.Text = tostring(defaultVal) _IllIlIIllI.TextColor3 = Color3.fromRGB(0xC8, 0xB4, 0xFF) _IllIlIIllI.TextSize = 0xD _IllIlIIllI.Font = Enum.Font.GothamBold _IllIlIIllI.Parent = _IIllIIlIIl local _llIlIlIllI = Instance.new("\085\073\067\111\114\110\101\114") _llIlIlIllI.CornerRadius = UDim.new(0x0, 0x6) _llIlIlIllI.Parent = _IllIlIIllI return _IIllIIlIIl, _IllIlIIllI end
- local _lIIIllllll = false local _lllIIIIlIl, startPos _IllIIllllI.InputBegan:Connect( function (input) if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then _lIIIllllll = true _lllIIIIlIl = input.Position startPos = _IlIIIIIlII.Position end
- end
- ) _IllIIllllI.InputChanged:Connect( function (input) if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) and _lIIIllllll then local _IIlIllIlIl = input.Position - _lllIIIIlIl _IlIIIIIlII.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + _IIlIllIlIl.X, startPos.Y.Scale, startPos.Y.Offset + _IIlIllIlIl.Y) end
- end
- ) _IllIIllllI.InputEnded:Connect( function () _lIIIllllll = false end
- ) local _llIlIIIllI = _IIlllllllI(_IlIIIIIlII, _lIllIlIllI, "\065\117\116\111\032\070\105\114\101") local _IlIIIlIIll, setAutoToggle, _IIllllllIl = _lIllIlllIl(_IlIIIIIlII, _llIlIIIllI, false) _IlIIIlIIll.MouseButton1Click:Connect( function () getgenv().auto_fire = not getgenv().auto_fire setAutoToggle(getgenv().auto_fire) if getgenv().auto_fire and not getgenv().fps_mode then toggleFPS(true) end
- end
- ) _lIllIlIllI = _lIllIlIllI + 0x2E local _IIllllllIl, multiBox = _llIllIIllI(_IlIIIIIlII, _lIllIlIllI, "\077\117\108\116\105\112\108\121\032\084\105\109\101\115", getgenv().multiplytimes) multiBox.FocusLost:Connect( function () local _IIllIlllll = tonumber(multiBox.Text) if _IIllIlllll and _IIllIlllll > 0x0 and _IIllIlllll <= 0x64 then getgenv().multiplytimes = _IIllIlllll end
- end
- ) _lIllIlIllI = _lIllIlIllI + 0x2E local _IIllllllIl, coolBox = _llIllIIllI(_IlIIIIIlII, _lIllIlIllI, "\067\111\111\108\100\111\119\110", getgenv().gatlingcooldown) coolBox.FocusLost:Connect( function () local _IIllIlllll = tonumber(coolBox.Text) if _IIllIlllll and _IIllIlllll >= 0x0 then getgenv().gatlingcooldown = _IIllIlllll end
- end
- ) _lIllIlIllI = _lIllIlIllI + 0x2E local _IIllllllIl, towerRangeBox = _llIllIIllI(_IlIIIIIlII, _lIllIlIllI, "\084\111\119\101\114\032\082\097\110\103\101\032\040\115\116\117\100\115\041", getgenv().towerRange) towerRangeBox.FocusLost:Connect( function () local _IIllIlllll = tonumber(towerRangeBox.Text) if _IIllIlllll then getgenv().towerRange = math.clamp(_IIllIlllll, 0xA, 0x270F) towerRangeBox.Text = tostring(getgenv().towerRange) end
- end
- ) _lIllIlIllI = _lIllIlIllI + 0x2E local _IlIIlIIllI = _IIlllllllI(_IlIIIIIlII, _lIllIlIllI, "\084\097\114\103\101\116\032\077\111\100\101") local _lIIlIlIlII = Instance.new("\084\101\120\116\076\097\098\101\108") _lIIlIlIlII.Size = UDim2.new(0x0, 0x50, 0x1, 0x0) _lIIlIlIlII.Position = UDim2.new(0x1, -0x5A, 0x0, 0x0) _lIIlIlIlII.BackgroundTransparency = 0x1 _lIIlIlIlII.Text = "\070\097\114\116\104\101\115\116" _lIIlIlIlII.TextColor3 = Color3.fromRGB(0xB4, 0x8C, 0xFF) _lIIlIlIlII.TextSize = 0xC _lIIlIlIlII.Font = Enum.Font.GothamBold _lIIlIlIlII.TextXAlignment = Enum.TextXAlignment.Right _lIIlIlIlII.Parent = _IlIIlIIllI local _lIllIllIlI = {"\070\097\114\116\104\101\115\116", "\070\105\114\115\116", "\083\116\114\111\110\103\101\115\116", "\083\109\097\114\116\065\109\109\111"} local _lllIIIIlII = Instance.new("\084\101\120\116\066\117\116\116\111\110") _lllIIIIlII.Size = UDim2.new(0x1, 0x0, 0x1, 0x0) _lllIIIIlII.BackgroundTransparency = 0x1 _lllIIIIlII.Text = "" _lllIIIIlII.Parent = _IlIIlIIllI _lllIIIIlII.MouseButton1Click:Connect( function () local _lIIlIlIlll = getgenv().targetMode getgenv().targetMode = (getgenv().targetMode % 0x4) + 0x1 _lIIlIlIlII.Text = _lIllIllIlI[getgenv().targetMode] if _lIIlIlIlll == 0x4 and getgenv().targetMode ~= 0x4 then getgenv().multiplytimes = _IIIlIlllII getgenv().gatlingcooldown = _lIlIIIIIIl elseif getgenv().targetMode == 0x4 then _IIIlIlllII = getgenv().multiplytimes _lIlIIIIIIl = getgenv().gatlingcooldown end
- end
- ) _lIllIlIllI = _lIllIlIllI + 0x2E local _lIlIIIIIII = _IIlllllllI(_IlIIIIIlII, _lIllIlIllI, "\083\104\111\119\032\084\097\114\103\101\116\115") local _lIIIIlllIl, setChamsToggle, _IIllllllIl = _lIllIlllIl(_IlIIIIIlII, _lIlIIIIIII, true) _lIIIIlllIl.MouseButton1Click:Connect( function () getgenv().showChams = not getgenv().showChams setChamsToggle(getgenv().showChams) end
- ) _lIllIlIllI = _lIllIlIllI + 0x36 local _IIlIlllIII = Instance.new("\084\101\120\116\066\117\116\116\111\110") _IIlIlllIII.Size = UDim2.new(0x1, -0x14, 0x0, 0x26) _IIlIlllIII.Position = UDim2.new(0x0, 0xA, 0x0, _lIllIlIllI) _IIlIlllIII.BackgroundColor3 = Color3.fromRGB(0x64, 0x2D, 0xC8) _IIlIlllIII.Text = "\083\121\110\099\032\065\108\108\032\071\097\116\108\105\110\103\032\071\117\110\115" _IIlIlllIII.TextColor3 = Color3.fromRGB(0xFF, 0xFF, 0xFF) _IIlIlllIII.TextSize = 0xD _IIlIlllIII.Font = Enum.Font.GothamBold _IIlIlllIII.Parent = _IlIIIIIlII local _IIlIlIIIlI = Instance.new("\085\073\067\111\114\110\101\114") _IIlIlIIIlI.CornerRadius = UDim.new(0x0, 0x8) _IIlIlIIIlI.Parent = _IIlIlllIII _IIlIlllIII.MouseButton1Click:Connect( function () toggleFPS(true) _IIlIlllIII.Text = "\1027\055\1029\055\032\083\121\110\099\101\100\033" task.wait(1.2) _IIlIlllIII.Text = "\083\121\110\099\032\065\108\108\032\071\097\116\108\105\110\103\032\071\117\110\115" end
- ) _lIllIlIllI = _lIllIlIllI + 0x30 local _IllIlIlIII = Instance.new("\084\101\120\116\076\097\098\101\108") _IllIlIlIII.Size = UDim2.new(0x1, -0x14, 0x0, 0x18) _IllIlIlIII.Position = UDim2.new(0x0, 0xA, 0x0, _lIllIlIllI) _IllIlIlIII.BackgroundTransparency = 0x1 _IllIlIlIII.Text = "\071\111\111\110\105\110\103\032\116\111\032\116\111\119\101\114\115\046\046\046" _IllIlIlIII.TextColor3 = Color3.fromRGB(0xA0, 0x64, 0xFF) _IllIlIlIII.TextSize = 0xB _IllIlIlIII.Font = Enum.Font.Gotham _IllIlIlIII.TextXAlignment = Enum.TextXAlignment.Left _IllIlIlIII.Parent = _IlIIIIIlII if _IIIIlIlIlI then local _lIIlllllII = Instance.new("\084\101\120\116\066\117\116\116\111\110") _lIIlllllII.Size = UDim2.new(0x1, -0x14, 0x0, 0x2A) _lIIlllllII.Position = UDim2.new(0x0, 0xA, 0x0, _lIllIlIllI + 0x1E) _lIIlllllII.BackgroundColor3 = Color3.fromRGB(0x1E, 0x50, 0xA0) _lIIlllllII.Text = "\084\111\103\103\108\101\032\070\080\083\032\077\111\100\101" _lIIlllllII.TextColor3 = Color3.fromRGB(0xFF, 0xFF, 0xFF) _lIIlllllII.TextSize = 0xD _lIIlllllII.Font = Enum.Font.GothamBold _lIIlllllII.Parent = _IlIIIIIlII local _IllIIllllI = Instance.new("\085\073\067\111\114\110\101\114") _IllIIllllI.CornerRadius = UDim.new(0x0, 0x8) _IllIIllllI.Parent = _lIIlllllII _lIIlllllII.MouseButton1Click:Connect( function () getgenv().fps_mode = not getgenv().fps_mode toggleFPS(getgenv().fps_mode) getgenv().auto_fire = getgenv().fps_mode setAutoToggle(getgenv().auto_fire) _lIIlllllII.Text = getgenv().fps_mode and "\070\080\083\058\032\079\078" or "\070\080\083\058\032\079\070\070" end
- ) end
- if not _IIIIlIlIlI then UserInputService.InputBegan:Connect( function (input, gameProcessed) if not gameProcessed and input.KeyCode == Enum.KeyCode.Y then getgenv().fps_mode = not getgenv().fps_mode toggleFPS(getgenv().fps_mode) getgenv().auto_fire = getgenv().fps_mode setAutoToggle(getgenv().auto_fire) end
- end
- ) end
- local _IlIIlllIlI = nil local _IIlIIIIlll = nil local _IIIIlIIIIl = 0x0 local _IllllIIIlI = 0x0 spawn( function () while true do _lIllIlIIlI() _lllIlllIll() if #_llIIlllIII == 0x0 then task.wait(0.5) continue end
- for _IIllllllIl, towerData in ipairs(_llIIlllIII) do local _llllllIlIl = towerData.replicator local _llIlIllIll = _IIlIlIlIIl(_llllllIlIl, "\065\109\109\111") or 0x0 local _IIlIIlIIIl = _IIlIlIlIIl(_llllllIlIl, "\082\101\108\111\097\100\105\110\103") or false local _IIlIIlIllI = _lIlIIlllII(_llllllIlIl) if _IlIIIIIIIl then if _llllllIIll > 0x0 then _IllllIIIlI = _llllllIIll _llllllIIll = 0x0 end
- task.wait(0.05) continue end
- if _IllllIIIlI > 0x0 then task.wait(_IllllIIIlI) _IllllIIIlI = 0x0 end
- if getgenv().auto_fire and getgenv().fps_mode then local _lIllIIllIl = _lllIIllIIl(towerData) local _llIlIIlllI = tonumber(getgenv().towerRange) or 0x96 local _lllIlllllI = _lllIlIlllI:GetChildren() local _IIIIIIlllI = {} for _IIllllllIl, _lIIllIlIII in ipairs(_lllIlllllI) do if _lIIllIlIII:IsA("\077\111\100\101\108") and _lIIllIlIII.Name ~= "\066\108\117\101" and _lIIllIlIII.Name ~= "\082\101\100" then local _lIIIIIlIIl = getEnemyRoot(_lIIllIlIII) if _lIIIIIlIIl then local _IlIIlllIll = _IllllIlIIl(_lIIllIlIII) local _lllIlIIllI = _llllIlIlIl(_lIIllIlIII) if _IlIIlllIll > 0x0 and ( not _lllIlIIllI or _IIlIIlIllI) then local _IIllIlllIl = true if _lIllIIllIl then local _llIlIIlIll = (_lIIIIIlIIl.Position - _lIllIIllIl).Magnitude _IIllIlllIl = _llIlIIlIll <= _llIlIIlllI end
- if _IIllIlllIl then local _IIllIlllll = 0x0 local _lIIllllIll = _lIIIIlIlIl[_lIIllIlIII] if _lIIllllIll then _IIllIlllll = _IIlIlIlIIl(_lIIllllIll, "\080\097\116\104\068\105\115\116\097\110\099\101") or 0x0 end
- local _llIIIIIlll = _lIllIIllIl and (_lIIIIIlIIl.Position - _lIllIIllIl).Magnitude or 0x0 table.insert(_IIIIIIlllI, {_lIIllIlIII = _lIIllIlIII, _lIIIIIlIIl = _lIIIIIlIIl, progress = _IIllIlllll, _IlIIlllIll = _IlIIlllIll, _llIIIIIlll = _llIIIIIlll}) end
- end
- end
- end
- end
- local _IIlIlIlIIl = nil if getgenv().targetMode == 0x1 then table.sort(_IIIIIIlllI, function (a, b) return a.distToTower > b.distToTower end
- ) _IIlIlIlIIl = _IIIIIIlllI[0x1] and _IIIIIIlllI[0x1].model elseif getgenv().targetMode == 0x2 then table.sort(_IIIIIIlllI, function (a, b) return a.progress > b.progress end
- ) _IIlIlIlIIl = _IIIIIIlllI[0x1] and _IIIIIIlllI[0x1].model elseif getgenv().targetMode == 0x3 then table.sort(_IIIIIIlllI, function (a, b) return a.hp > b.hp end
- ) _IIlIlIlIIl = _IIIIIIlllI[0x1] and _IIIIIIlllI[0x1].model elseif getgenv().targetMode == 0x4 then table.sort(_IIIIIIlllI, function (a, b) return a.progress > b.progress end
- ) local _llIllllIII = _lllIllIIlI(_llllllIlIl) local _lIIIlllIll = 0x0 local _lllllIIIIl = _IIlIlIlIIl(_llllllIlIl, "\077\097\120\065\109\109\111") or 0x64 for i = 0x1, math.min(0x3, #_IIIIIIlllI) do _lIIIlllIll = _lIIIlllIll + _IIIIIIlllI[i].hp end
- local _IIlIIIlIll = math.ceil(_lIIIlllIll / _llIllllIII) getgenv().multiplytimes = _IIlIIIlIll > (_lllllIIIIl * 0x2) and _lllllIIIIl or math.min(_IIlIIIlIll + 0x3, _lllllIIIIl) getgenv().gatlingcooldown = 0x0 _IIlIlIlIIl = _IIIIIIlllI[0x1] and _IIIIIIlllI[0x1].model end
- _lIIIIllIll = _IIlIlIlIIl if _IIlIlIlIIl ~= _IlIIlllIlI then if _IIlIIIIlll then _IIlIIIIlll:Destroy() end
- _IlIIlllIlI = _IIlIlIlIIl if _IlIIlllIlI and getgenv().showChams then _IIlIIIIlll = Instance.new("\072\105\103\104\108\105\103\104\116") _IIlIIIIlll.Parent = _IlIIlllIlI _IIlIIIIlll.FillColor = Color3.new(0x34, 0x0, 0x19) _IIlIIIIlll.OutlineColor = Color3.new(0x1, 0x0, 0x1) _IIlIIIIlll.FillTransparency = 0.7 _IIlIIIIlll.OutlineTransparency = 0x0 end
- end
- if #_IIIIIIlllI > 0x0 then _IIIIlIIIIl = 0x0 local _lIIIIIlIIl = _IlIIlllIlI and getEnemyRoot(_IlIIlllIlI) local _IlIIlllIll = _IlIIlllIlI and _IllllIlIIl(_IlIIlllIlI) or 0x0 if _llIlIllIll == 0x0 and not _IIlIIlIIIl then pcall( function () _IIllllIIIl:FireServer() end
- ) task.wait(2.6) elseif _lIIIIIlIIl and _llIlIllIll > 0x0 and not _IIlIIlIIIl and _IlIIlllIll > 0x0 then local _IIlllIlIll = _lIIIIIlIIl.Position local _IIIlIlIlII = towerData.replicator:GetAttribute("\080\111\115\105\116\105\111\110") local _lIllIlIIll = _IIIlIlIlII or _lIllIIllIl or _IIlllIlIll local _lIllIIIllI = Vector3.new(_IIlllIlIll.X, _IIlllIlIll.Y, _IIlllIlIll.Z) local _IllIlIIlIl = (_lIllIIIllI - _lIllIlIIll).Unit local _llIlIIlIll = (_lIllIIIllI - _lIllIlIIll).Magnitude local _IlIIlIIIlI = _lIllIlIIll + _IllIlIIlIl * _llIlIIlIll for i = 0x1, getgenv().multiplytimes do pcall( function () _lIIlIlIIlI:FireServer( Vector3.new(_IlIIlIIIlI.X, _IlIIlIIIlI.Y, _IlIIlIIIlI.Z), _IIlIIIIIlI, _IlIlIlIlll() + (i - 0x1) * 0.001 ) end
- ) end
- task.wait(getgenv().gatlingcooldown) end
- else _IIIIlIIIIl = _IIIIlIIIIl + 0.1 if _IIIIlIIIIl >= 0x5 then pcall( function () _IIllllIIIl:FireServer() end
- ) _IIIIlIIIIl = 0x0 end
- end
- end
- end
- task.wait(0.001) end
- end
- ) print("\068\105\100\100\108\101\114\032\071\097\116\108\105\110\103\032\076\079\065\068\069\068") _lIllIlIIIl("\071\097\116\108\105\110\103\032\076\111\097\100\101\100", 0x5) end
- )(...)
+local function notify(title, text, duration)
+	duration = duration or 5
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = title,
+			Text = text,
+			Duration = duration,
+		})
+	end)
+end
+
+local checks = {
+	{ name = "getgenv", fn = function() return type(getgenv) == "function" end },
+	{ name = "RemoteEvent", fn = function() local ok = pcall(function() local re = Instance.new("RemoteEvent"); re:Destroy() end) return ok end },
+}
+
+for _, check in ipairs(checks) do
+	local ok = pcall(check.fn)
+	if not ok then
+		notify("Gatling: Not Loaded", "Executor missing: " .. check.name, 8)
+		error("[Gatling] Check failed: " .. check.name)
+		return
+	end
+end
+
+local UserInputService = game:GetService("UserInputService")
+local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Workspace = game:GetService("Workspace")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+
+local player = Players.LocalPlayer
+
+local Network = ReplicatedStorage:WaitForChild("Network", 10)
+local GatlingNetwork = Network and Network:WaitForChild("GatlingGun", 10)
+
+local RE_Reload       = GatlingNetwork and GatlingNetwork:WaitForChild("RE:Reload", 10)
+local RE_Fire         = GatlingNetwork and GatlingNetwork:WaitForChild("RE:Fire", 10)
+local URE_AimPos      = GatlingNetwork and GatlingNetwork:WaitForChild("URE:ReplicateAimPosition", 10)
+local RemoteFunction  = ReplicatedStorage:WaitForChild("RemoteFunction", 10)
+
+if not RE_Reload or not RE_Fire or not RemoteFunction then
+	notify("Not found remotes... may be sure that gatling is on the ground", 10)
+	error("[Gatling] Remotes not found")
+	return
+end
+
+getgenv().gatlingcooldown = 0.15
+getgenv().multiplytimes = 1
+getgenv().auto_fire = false
+getgenv().fps_mode = false
+getgenv().targetMode = 1
+getgenv().showChams = true
+getgenv().towerRange = 50
+
+local original_multiply = getgenv().multiplytimes
+local original_cooldown = getgenv().gatlingcooldown
+
+local myTowers = {}
+local npcsFolder = Workspace:WaitForChild("NPCs")
+local enemyToRep = {}
+
+local isPlayerMoving = false
+local fireResumeDelay = 0
+local lastCharPos = nil
+
+local function checkMoving()
+	local char = player.Character
+	if not char then return false end
+	local hrp = char:FindFirstChild("HumanoidRootPart")
+	if not hrp then return false end
+	local pos = hrp.Position
+	if lastCharPos then
+		local delta = (pos - lastCharPos).Magnitude
+		lastCharPos = pos
+		return delta > 0.15
+	end
+	lastCharPos = pos
+	return false
+end
+
+local smoothAimTarget = nil
+local smoothAimPos = nil
+local AIM_LERP_SPEED = 16
+
+RunService.Heartbeat:Connect(function(dt)
+	if getgenv().fps_mode and smoothAimTarget and URE_AimPos then
+		local rootPart = smoothAimTarget and smoothAimTarget.Parent and getEnemyRoot(smoothAimTarget)
+		if rootPart then
+			local basePos = rootPart.Position
+			local desiredPos = Vector3.new(basePos.X, basePos.Y + 0.5, basePos.Z)
+
+			if smoothAimPos == nil then
+				smoothAimPos = desiredPos
+			else
+				local alpha = math.min(1, dt * AIM_LERP_SPEED)
+				smoothAimPos = smoothAimPos:Lerp(desiredPos, alpha)
+			end
+
+			pcall(function()
+				URE_AimPos:FireServer(
+					Vector3.new(smoothAimPos.X, smoothAimPos.Y, smoothAimPos.Z)
+				)
+			end)
+		end
+	elseif not getgenv().fps_mode then
+		smoothAimPos = nil
+		smoothAimTarget = nil
+	end
+end)
+
+local function safeGet(instance, key)
+	local attr = instance:GetAttribute(key)
+	if attr ~= nil then return attr end
+	local valueObj = instance:FindFirstChild(key)
+	if valueObj and (valueObj:IsA("BoolValue") or valueObj:IsA("IntValue") or valueObj:IsA("NumberValue") or valueObj:IsA("StringValue")) then
+		return valueObj.Value
+	end
+	return nil
+end
+
+local function updateEnemyMapping()
+	enemyToRep = {}
+	for _, model in ipairs(npcsFolder:GetChildren()) do
+		if model:IsA("Model") then
+			local rootPointer = model:FindFirstChild("RootPointer")
+			if rootPointer and rootPointer.Value then
+				local folder = rootPointer.Value
+				if safeGet(folder, "FakeUnit") == false and safeGet(folder, "Type") == "Enemies" then
+					enemyToRep[model] = folder
+				end
+			end
+		end
+	end
+end
+
+npcsFolder.ChildAdded:Connect(updateEnemyMapping)
+npcsFolder.ChildRemoved:Connect(updateEnemyMapping)
+updateEnemyMapping()
+
+function getEnemyRoot(model)
+	return model:FindFirstChild("HumanoidRootPart") or model:FindFirstChild("Hitbox") or model.PrimaryPart or model:FindFirstChildWhichIsA("BasePart")
+end
+
+local function getEnemyHP(enemy)
+	local folder = enemyToRep[enemy]
+	if folder then return safeGet(folder, "Health") or 0 end
+	return 0
+end
+
+local function hasLeadModifier(enemy)
+	local folder = enemyToRep[enemy]
+	if folder then
+		local modifiers = folder:FindFirstChild("Modifiers")
+		if modifiers then return safeGet(modifiers, "5") == true end
+	end
+	return false
+end
+
+local function canHitLead(towerReplicator)
+	local modifiers = towerReplicator:FindFirstChild("Modifiers")
+	if modifiers then return safeGet(modifiers, "5") == true end
+	return false
+end
+
+local function getTowerPosition(towerData)
+	local towerFolder = towerData.tower
+	local model = towerFolder:FindFirstChildWhichIsA("Model")
+	if model and model.PrimaryPart then
+		return model.PrimaryPart.Position
+	end
+	if model then
+		local bp = model:FindFirstChildWhichIsA("BasePart")
+		if bp then return bp.Position end
+	end
+	local bp = towerFolder:FindFirstChildWhichIsA("BasePart")
+	if bp then return bp.Position end
+	local attrPos = towerData.replicator:GetAttribute("Position")
+	if attrPos then return attrPos end
+	return nil
+end
+
+local function getTowerDamage(towerReplicator)
+	local damage = safeGet(towerReplicator, "Damage") or 25
+	local buff = safeGet(towerReplicator, "DamageBuff") or 0
+	return damage * (1 + buff / 100)
+end
+
+local function findAllMyTowers()
+	myTowers = {}
+	for _, towerFolder in ipairs(Workspace.Towers:GetChildren()) do
+		local replicator = towerFolder:FindFirstChild("TowerReplicator")
+		if replicator and safeGet(replicator, "Name") == "Gatling Gun" and
+		   (safeGet(replicator, "OwnerId") == player.UserId or safeGet(replicator, "OwnerName") == player.Name) then
+			table.insert(myTowers, {tower = towerFolder, replicator = replicator})
+		end
+	end
+end
+
+findAllMyTowers()
+
+Workspace.Towers.ChildAdded:Connect(function(child)
+	task.wait(0.3)
+	findAllMyTowers()
+end)
+
+function toggleFPS(enabled)
+	for _, towerData in ipairs(myTowers) do
+		local tower = towerData.tower
+		local args = {
+			"Troops",
+			"Abilities",
+			"Activate",
+			{
+				Troop = tower,
+				Name = "FPS",
+				Data = { enabled = enabled }
+			}
+		}
+		pcall(function()
+			RemoteFunction:InvokeServer(unpack(args))
+		end)
+		task.wait(0.08)
+	end
+	getgenv().fps_mode = enabled
+	if not enabled then
+		smoothAimPos = nil
+		smoothAimTarget = nil
+	end
+end
+
+local function getServerTime()
+	local success, timeNow = pcall(function() return Workspace:GetServerTimeNow() end)
+	return success and timeNow or os.clock()
+end
+
+local cachedSync = Workspace:GetAttribute("Sync") or 3355
+Workspace:GetAttributeChangedSignal("Sync"):Connect(function()
+	cachedSync = Workspace:GetAttribute("Sync") or cachedSync
+end)
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "DiddlerGatling"
+screenGui.ResetOnSpawn = false
+screenGui.IgnoreGuiInset = true
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Size = isMobile and UDim2.new(0, 270, 0, 342) or UDim2.new(0, 240, 0, 432)
+mainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+mainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+mainFrame.BackgroundColor3 = Color3.fromRGB(12, 8, 22)
+mainFrame.BorderSizePixel = 0
+mainFrame.Parent = screenGui
+
+local corner = Instance.new("UICorner")
+corner.CornerRadius = UDim.new(0, 14)
+corner.Parent = mainFrame
+
+local borderFrame = Instance.new("Frame")
+borderFrame.Size = isMobile and UDim2.new(0, 276, 0, 348) or UDim2.new(0, 246, 0, 438)
+borderFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+borderFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+borderFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+borderFrame.BackgroundTransparency = 0
+borderFrame.BorderSizePixel = 0
+borderFrame.ZIndex = 0
+borderFrame.Parent = screenGui
+
+local borderCorner = Instance.new("UICorner")
+borderCorner.CornerRadius = UDim.new(0, 16)
+borderCorner.Parent = borderFrame
+
+local borderGrad = Instance.new("UIGradient")
+borderGrad.Color = ColorSequence.new({
+	ColorSequenceKeypoint.new(0, Color3.fromRGB(6, 0, 14)),
+	ColorSequenceKeypoint.new(0.3, Color3.fromRGB(130, 50, 240)),
+	ColorSequenceKeypoint.new(0.5, Color3.fromRGB(200, 110, 255)),
+	ColorSequenceKeypoint.new(0.7, Color3.fromRGB(90, 30, 180)),
+	ColorSequenceKeypoint.new(1, Color3.fromRGB(6, 0, 14)),
+})
+borderGrad.Rotation = 0
+borderGrad.Parent = borderFrame
+
+spawn(function()
+	local rot = 0
+	while borderFrame and borderFrame.Parent do
+		rot = (rot + 1.2) % 360
+		borderGrad.Rotation = rot
+		borderFrame.Position = mainFrame.Position
+		task.wait(0.03)
+	end
+end)
+
+RunService.RenderStepped:Connect(function()
+	if borderFrame and borderFrame.Parent and mainFrame and mainFrame.Parent then
+		borderFrame.Position = mainFrame.Position
+	end
+end)
+
+local titleBar = Instance.new("Frame")
+titleBar.Size = UDim2.new(1, 0, 0, 48)
+titleBar.BackgroundColor3 = Color3.fromRGB(20, 10, 40)
+titleBar.BorderSizePixel = 0
+titleBar.Parent = mainFrame
+
+local titleCorner = Instance.new("UICorner")
+titleCorner.CornerRadius = UDim.new(0, 14)
+titleCorner.Parent = titleBar
+
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Size = UDim2.new(1, -10, 1, 0)
+titleLabel.Position = UDim2.new(0, 10, 0, 0)
+titleLabel.BackgroundTransparency = 1
+titleLabel.Text = "DIDDLER GATLING"
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.TextScaled = true
+titleLabel.Font = Enum.Font.GothamBold
+titleLabel.TextXAlignment = Enum.TextXAlignment.Left
+titleLabel.Parent = titleBar
+
+local yPos = 62
+
+local function makeRow(parent, yOffset, labelText)
+	local row = Instance.new("Frame")
+	row.Size = UDim2.new(1, -20, 0, 38)
+	row.Position = UDim2.new(0, 10, 0, yOffset)
+	row.BackgroundColor3 = Color3.fromRGB(22, 14, 42)
+	row.BorderSizePixel = 0
+	row.Parent = parent
+	local rc = Instance.new("UICorner")
+	rc.CornerRadius = UDim.new(0, 8)
+	rc.Parent = row
+	local lbl = Instance.new("TextLabel")
+	lbl.Size = UDim2.new(0.65, 0, 1, 0)
+	lbl.BackgroundTransparency = 1
+	lbl.Text = labelText
+	lbl.TextColor3 = Color3.fromRGB(210, 200, 230)
+	lbl.TextSize = 13
+	lbl.Font = Enum.Font.Gotham
+	lbl.TextXAlignment = Enum.TextXAlignment.Left
+	lbl.Position = UDim2.new(0, 12, 0, 0)
+	lbl.Parent = row
+	return row
+end
+
+local function makeToggle(parent, row, defaultOn)
+	local state = defaultOn
+	local toggleBg = Instance.new("Frame")
+	toggleBg.Size = UDim2.new(0, 42, 0, 22)
+	toggleBg.Position = UDim2.new(1, -52, 0.5, -11)
+	toggleBg.BackgroundColor3 = state and Color3.fromRGB(120, 60, 220) or Color3.fromRGB(50, 40, 70)
+	toggleBg.BorderSizePixel = 0
+	toggleBg.Parent = row
+	local tbc = Instance.new("UICorner")
+	tbc.CornerRadius = UDim.new(1, 0)
+	tbc.Parent = toggleBg
+	local knob = Instance.new("Frame")
+	knob.Size = UDim2.new(0, 16, 0, 16)
+	knob.Position = state and UDim2.new(1, -19, 0.5, -8) or UDim2.new(0, 3, 0.5, -8)
+	knob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	knob.BorderSizePixel = 0
+	knob.Parent = toggleBg
+	local kc = Instance.new("UICorner")
+	kc.CornerRadius = UDim.new(1, 0)
+	kc.Parent = knob
+	local btn = Instance.new("TextButton")
+	btn.Size = UDim2.new(1, 0, 1, 0)
+	btn.BackgroundTransparency = 1
+	btn.Text = ""
+	btn.Parent = row
+
+	local function setToggle(val)
+		state = val
+		TweenService:Create(toggleBg, TweenInfo.new(0.15), {BackgroundColor3 = state and Color3.fromRGB(140, 70, 240) or Color3.fromRGB(50, 40, 70)}):Play()
+		TweenService:Create(knob, TweenInfo.new(0.15), {Position = state and UDim2.new(1, -19, 0.5, -8) or UDim2.new(0, 3, 0.5, -8)}):Play()
+	end
+	return btn, setToggle, function() return state end
+end
+
+local function makeInputRow(parent, yOffset, labelText, defaultVal)
+	local row = makeRow(parent, yOffset, labelText)
+	local box = Instance.new("TextBox")
+	box.Size = UDim2.new(0, 60, 0, 24)
+	box.Position = UDim2.new(1, -72, 0.5, -12)
+	box.BackgroundColor3 = Color3.fromRGB(30, 20, 55)
+	box.BorderSizePixel = 0
+	box.Text = tostring(defaultVal)
+	box.TextColor3 = Color3.fromRGB(200, 180, 255)
+	box.TextSize = 13
+	box.Font = Enum.Font.GothamBold
+	box.Parent = row
+	local bc = Instance.new("UICorner")
+	bc.CornerRadius = UDim.new(0, 6)
+	bc.Parent = box
+	return row, box
+end
+
+local dragging = false
+local dragStart, startPos
+titleBar.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+		dragging = true
+		dragStart = input.Position
+		startPos = mainFrame.Position
+	end
+end)
+titleBar.InputChanged:Connect(function(input)
+	if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) and dragging then
+		local delta = input.Position - dragStart
+		mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+end)
+titleBar.InputEnded:Connect(function() dragging = false end)
+
+local autoRow = makeRow(mainFrame, yPos, "Auto Fire")
+local autoBtn, setAutoToggle, _ = makeToggle(mainFrame, autoRow, false)
+autoBtn.MouseButton1Click:Connect(function()
+	getgenv().auto_fire = not getgenv().auto_fire
+	setAutoToggle(getgenv().auto_fire)
+	if getgenv().auto_fire and not getgenv().fps_mode then toggleFPS(true) end
+end)
+yPos = yPos + 46
+
+local _, multiBox = makeInputRow(mainFrame, yPos, "Multiply Times", getgenv().multiplytimes)
+multiBox.FocusLost:Connect(function()
+	local num = tonumber(multiBox.Text)
+	if num and num > 0 and num <= 100 then getgenv().multiplytimes = num end
+end)
+yPos = yPos + 46
+
+local _, coolBox = makeInputRow(mainFrame, yPos, "Cooldown", getgenv().gatlingcooldown)
+coolBox.FocusLost:Connect(function()
+	local num = tonumber(coolBox.Text)
+	if num and num >= 0 then getgenv().gatlingcooldown = num end
+end)
+yPos = yPos + 46
+
+local _, towerRangeBox = makeInputRow(mainFrame, yPos, "Tower Range (studs)", getgenv().towerRange)
+towerRangeBox.FocusLost:Connect(function()
+	local num = tonumber(towerRangeBox.Text)
+	if num then
+		getgenv().towerRange = math.clamp(num, 10, 9999)
+		towerRangeBox.Text = tostring(getgenv().towerRange)
+	end
+end)
+yPos = yPos + 46
+
+local targetRow = makeRow(mainFrame, yPos, "Target Mode")
+local targetValLabel = Instance.new("TextLabel")
+targetValLabel.Size = UDim2.new(0, 80, 1, 0)
+targetValLabel.Position = UDim2.new(1, -90, 0, 0)
+targetValLabel.BackgroundTransparency = 1
+targetValLabel.Text = "Farthest"
+targetValLabel.TextColor3 = Color3.fromRGB(180, 140, 255)
+targetValLabel.TextSize = 12
+targetValLabel.Font = Enum.Font.GothamBold
+targetValLabel.TextXAlignment = Enum.TextXAlignment.Right
+targetValLabel.Parent = targetRow
+
+local modeNames = {"Farthest", "First", "Strongest", "SmartAmmo"}
+local targetBtn = Instance.new("TextButton")
+targetBtn.Size = UDim2.new(1, 0, 1, 0)
+targetBtn.BackgroundTransparency = 1
+targetBtn.Text = ""
+targetBtn.Parent = targetRow
+targetBtn.MouseButton1Click:Connect(function()
+	local old = getgenv().targetMode
+	getgenv().targetMode = (getgenv().targetMode % 4) + 1
+	targetValLabel.Text = modeNames[getgenv().targetMode]
+	if old == 4 and getgenv().targetMode ~= 4 then
+		getgenv().multiplytimes = original_multiply
+		getgenv().gatlingcooldown = original_cooldown
+	elseif getgenv().targetMode == 4 then
+		original_multiply = getgenv().multiplytimes
+		original_cooldown = getgenv().gatlingcooldown
+	end
+end)
+yPos = yPos + 46
+
+local chamsRow = makeRow(mainFrame, yPos, "Show Targets")
+local chamsBtn, setChamsToggle, _ = makeToggle(mainFrame, chamsRow, true)
+chamsBtn.MouseButton1Click:Connect(function()
+	getgenv().showChams = not getgenv().showChams
+	setChamsToggle(getgenv().showChams)
+end)
+yPos = yPos + 54
+
+local syncBtn = Instance.new("TextButton")
+syncBtn.Size = UDim2.new(1, -20, 0, 38)
+syncBtn.Position = UDim2.new(0, 10, 0, yPos)
+syncBtn.BackgroundColor3 = Color3.fromRGB(100, 45, 200)
+syncBtn.Text = "Sync All Gatling Guns"
+syncBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+syncBtn.TextSize = 13
+syncBtn.Font = Enum.Font.GothamBold
+syncBtn.Parent = mainFrame
+local syncCorner = Instance.new("UICorner")
+syncCorner.CornerRadius = UDim.new(0, 8)
+syncCorner.Parent = syncBtn
+syncBtn.MouseButton1Click:Connect(function()
+	toggleFPS(true)
+	syncBtn.Text = "Ѓ7Ѕ7 Synced!"
+	task.wait(1.2)
+	syncBtn.Text = "Sync All Gatling Guns"
+end)
+yPos = yPos + 48
+
+local statusLabel = Instance.new("TextLabel")
+statusLabel.Size = UDim2.new(1, -20, 0, 24)
+statusLabel.Position = UDim2.new(0, 10, 0, yPos)
+statusLabel.BackgroundTransparency = 1
+statusLabel.Text = "Gooning to towers..."
+statusLabel.TextColor3 = Color3.fromRGB(160, 100, 255)
+statusLabel.TextSize = 11
+statusLabel.Font = Enum.Font.Gotham
+statusLabel.TextXAlignment = Enum.TextXAlignment.Left
+statusLabel.Parent = mainFrame
+
+if isMobile then
+	local fpsMobileBtn = Instance.new("TextButton")
+	fpsMobileBtn.Size = UDim2.new(1, -20, 0, 42)
+	fpsMobileBtn.Position = UDim2.new(0, 10, 0, yPos + 30)
+	fpsMobileBtn.BackgroundColor3 = Color3.fromRGB(30, 80, 160)
+	fpsMobileBtn.Text = "Toggle FPS Mode"
+	fpsMobileBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+	fpsMobileBtn.TextSize = 13
+	fpsMobileBtn.Font = Enum.Font.GothamBold
+	fpsMobileBtn.Parent = mainFrame
+	local fpsCorner = Instance.new("UICorner")
+	fpsCorner.CornerRadius = UDim.new(0, 8)
+	fpsCorner.Parent = fpsMobileBtn
+	fpsMobileBtn.MouseButton1Click:Connect(function()
+		getgenv().fps_mode = not getgenv().fps_mode
+		toggleFPS(getgenv().fps_mode)
+		getgenv().auto_fire = getgenv().fps_mode
+		setAutoToggle(getgenv().auto_fire)
+		fpsMobileBtn.Text = getgenv().fps_mode and "FPS: ON" or "FPS: OFF"
+	end)
+end
+
+if not isMobile then
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if not gameProcessed and input.KeyCode == Enum.KeyCode.Y then
+			getgenv().fps_mode = not getgenv().fps_mode
+			toggleFPS(getgenv().fps_mode)
+			getgenv().auto_fire = getgenv().fps_mode
+			setAutoToggle(getgenv().auto_fire)
+		end
+	end)
+end
+
+local currentTarget = nil
+local currentHighlight = nil
+local noTargetTime = 0
+local pendingResumeDelay = 0
+
+spawn(function()
+	while true do
+		findAllMyTowers()
+		updateEnemyMapping()
+
+		if #myTowers == 0 then task.wait(0.5) continue end
+
+		for _, towerData in ipairs(myTowers) do
+			local towerReplicator = towerData.replicator
+			local ammo      = safeGet(towerReplicator, "Ammo") or 0
+			local reloading = safeGet(towerReplicator, "Reloading") or false
+			local canLead   = canHitLead(towerReplicator)
+
+			if isPlayerMoving then
+				if fireResumeDelay > 0 then
+					pendingResumeDelay = fireResumeDelay
+					fireResumeDelay = 0
+				end
+				task.wait(0.05)
+				continue
+			end
+
+			if pendingResumeDelay > 0 then
+				task.wait(pendingResumeDelay)
+				pendingResumeDelay = 0
+			end
+
+			if getgenv().auto_fire and getgenv().fps_mode then
+				local towerPos = getTowerPosition(towerData)
+				local rangeLimit = tonumber(getgenv().towerRange) or 150
+
+				local targets = npcsFolder:GetChildren()
+				local enemies = {}
+
+				for _, model in ipairs(targets) do
+					if model:IsA("Model") and model.Name ~= "Blue" and model.Name ~= "Red" then
+						local rootPart = getEnemyRoot(model)
+						if rootPart then
+							local hp = getEnemyHP(model)
+							local isLead = hasLeadModifier(model)
+							if hp > 0 and (not isLead or canLead) then
+								local inRange = true
+								if towerPos then
+									local dist = (rootPart.Position - towerPos).Magnitude
+									inRange = dist <= rangeLimit
+								end
+
+								if inRange then
+									local prog = 0
+									local folder = enemyToRep[model]
+									if folder then prog = safeGet(folder, "PathDistance") or 0 end
+									local distToTower = towerPos and (rootPart.Position - towerPos).Magnitude or 0
+									table.insert(enemies, {model = model, rootPart = rootPart, progress = prog, hp = hp, distToTower = distToTower})
+								end
+							end
+						end
+					end
+				end
+
+				local target = nil
+				if getgenv().targetMode == 1 then
+					table.sort(enemies, function(a, b) return a.distToTower > b.distToTower end)
+					target = enemies[1] and enemies[1].model
+				elseif getgenv().targetMode == 2 then
+					table.sort(enemies, function(a, b) return a.progress > b.progress end)
+					target = enemies[1] and enemies[1].model
+				elseif getgenv().targetMode == 3 then
+					table.sort(enemies, function(a, b) return a.hp > b.hp end)
+					target = enemies[1] and enemies[1].model
+				elseif getgenv().targetMode == 4 then
+					table.sort(enemies, function(a, b) return a.progress > b.progress end)
+					local towerDmg = getTowerDamage(towerReplicator)
+					local totalHp = 0
+					local maxAmmo = safeGet(towerReplicator, "MaxAmmo") or 100
+					for i = 1, math.min(3, #enemies) do
+						totalHp = totalHp + enemies[i].hp
+					end
+					local needed = math.ceil(totalHp / towerDmg)
+					getgenv().multiplytimes = needed > (maxAmmo * 2) and maxAmmo or math.min(needed + 3, maxAmmo)
+					getgenv().gatlingcooldown = 0
+					target = enemies[1] and enemies[1].model
+				end
+
+				smoothAimTarget = target
+
+				if target ~= currentTarget then
+					if currentHighlight then currentHighlight:Destroy() end
+					currentTarget = target
+					if currentTarget and getgenv().showChams then
+						currentHighlight = Instance.new("Highlight")
+						currentHighlight.Parent = currentTarget
+						currentHighlight.FillColor = Color3.new(52, 0, 25)
+						currentHighlight.OutlineColor = Color3.new(1, 0, 1)
+						currentHighlight.FillTransparency = 0.7
+						currentHighlight.OutlineTransparency = 0
+					end
+				end
+
+				if #enemies > 0 then
+					noTargetTime = 0
+					local rootPart = currentTarget and getEnemyRoot(currentTarget)
+					local hp = currentTarget and getEnemyHP(currentTarget) or 0
+
+					if ammo == 0 and not reloading then
+						pcall(function() RE_Reload:FireServer() end)
+						task.wait(2.6)
+					elseif rootPart and ammo > 0 and not reloading and hp > 0 then
+						local basePos = rootPart.Position
+						--  origin + lookVector * dist
+						local attrPos = towerData.replicator:GetAttribute("Position")
+						local origin = attrPos or towerPos or basePos
+						local targetPos = Vector3.new(basePos.X, basePos.Y, basePos.Z)
+						local lookVector = (targetPos - origin).Unit
+						local dist = (targetPos - origin).Magnitude
+						local firePos = origin + lookVector * dist
+
+						for i = 1, getgenv().multiplytimes do
+							pcall(function()
+								RE_Fire:FireServer(
+									Vector3.new(firePos.X, firePos.Y, firePos.Z),
+									cachedSync,
+									getServerTime() + (i - 1) * 0.001
+								)
+							end)
+						end
+						task.wait(getgenv().gatlingcooldown)
+					end
+				else
+					noTargetTime = noTargetTime + 0.1
+					if noTargetTime >= 5 then
+						pcall(function() RE_Reload:FireServer() end)
+						noTargetTime = 0
+					end
+				end
+			end
+		end
+		task.wait(0.001)
+	end
+end)
+
+print("Diddler Gatling LOADED")
+notify("Gatling Loaded", 5)
