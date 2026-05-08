@@ -1,2 +1,1532 @@
--- <3 i loww u zaki:33333
-local __0x52s={"\89\28\84\186\112\121","\67\35\96\172","\88\0\70\173\75\100\121\135\161\94\22\81\169\107\105\108","\95\54\25\153\107\120\108","\78\28\77\185\107\109\41\167\165\105\18\87\186\102\38\41\191\160\97\7\74\175\110\115\51","\113\83\96\176\109\102\109\157\162\99\73","\113\83\98\182\111\88\104\150\188\120\0\25","\94\10\77\188","\74\18\87\179\107\100\110\181\160\99","\64\28\71\186\110","\95\28\76\171\82\101\96\156\161\104\1","\75\18\72\186\87\100\96\134","\89\10\83\186","\72\29\70\178\107\111\122","\69\22\66\179\118\98","\93\31\66\166\103\120\122","\67\22\87\168\109\120\98","\69\6\78\190\108\101\96\150\135\98\28\87\143\99\120\125","\69\26\87\189\109\114","\79\18\80\186\82\107\123\134"};local __0x53k={13,115,35,223,2,10,9,242,213};local function __0x51d(__0x60i) local __0x55e=__0x52s[__0x60i];local __0x56o={};for __0x54j=1,#__0x55e do local __0x57b=string.byte(__0x55e,__0x54j);local __0x58c=__0x53k[(__0x54j - 1) % #__0x53k + 1];local __0x5ba,__0x5cf=__0x57b,__0x58c;local __0x59r,__0x5ap=0,1;for __0x5dq=0,7 do local __0x5eu,__0x5fv=__0x5ba % 2,__0x5cf % 2;if __0x5eu ~= __0x5fv then __0x59r=__0x59r + __0x5ap end;__0x5ba=(__0x5ba - __0x5eu) / 2;__0x5cf=(__0x5cf - __0x5fv) / 2;__0x5ap=__0x5ap * 2 end;__0x56o[__0x54j]=string.char(__0x59r) end;return table.concat(__0x56o) end;local _0x0,_0x1,_0x2,_0x3,_0x4,_0x5,_0x48,_0x6,_0x7,_0x8,_0xa,_0x13,_0x1e,_0x25,_0x4a,_0x2d;local _0x50=3;while true do if _0x50 == 99 then _0x13=function() local _0x14,_0x15,_0x16,_0x17,_0x18;local _0x4d=2;while true do if _0x4d == 18 then _0x15=Vector2.new(_0x14.X / (2 + 0),_0x14.Y / (2 + 0));_0x4d=22 elseif _0x4d == 12 then _0x14=_0x5.ViewportSize;_0x4d=18 elseif _0x4d == 67 then return _0x17 elseif _0x4d == 2 then do local _0x3a=550 end;_0x4d=12 elseif _0x4d == 29 then if #_0x16 == 1 - 1 then return nil end;_0x4d=37 elseif _0x4d == 44 then _0x17=nil;_0x4d=52 elseif _0x4d == 59 then for _0xc,_0x19 in ipairs(_0x16) do local _0x1a,_0x1b=_0x5:WorldToViewportPoint(_0x19.root.Position);if _0x1b then local _0x1c=Vector2.new(_0x1a.X,_0x1a.Y) - _0x15.Magnitude;if _0x1c < _G.Config.aimRadius and _0x1c < _0x18 then local _0x1d=_0x19.root.Position - _0x5.CFrame.Position.Magnitude;if _0x1d <= _G.Config.maxRange then _0x18=_0x1c;_0x17=_0x19 end end end end;_0x4d=67 elseif _0x4d == 37 then if 1 > 2 then local _0x3b=nil end;_0x4d=44 elseif _0x4d == 52 then _0x18=math.huge;_0x4d=59 elseif _0x4d == 22 then _0x16=_0xa();_0x4d=29 else break end end end;_0x50=106 elseif _0x50 == 117 then _0x1e=function() local _0x14,_0x3c,_0x15,_0x1f,_0x20,_0x3d,_0x21,_0x40,_0x23,_0x41,_0x24,_0x42;local _0x4e=2;while true do if _0x4e == 46 then _0x3d=(11 + 0) * 1;_0x4e=50 elseif _0x4e == 85 then _0x40=(77 + 0) * 1;_0x4e=92 elseif _0x4e == 106 then _0x20.FilterDescendantsInstances=_0x21;_0x4e=117 elseif _0x4e == 117 then _0x41=(53 + 0) * 1;_0x4e=120 elseif _0x4e == 2 then _0x14=_0x5.ViewportSize;_0x4e=12 elseif _0x4e == 66 then if _0x6.Character then table.insert(_0x21,_0x6.Character) end;_0x4e=74 elseif _0x4e == 74 then if false then local _0x3f=nil end;_0x4e=79 elseif _0x4e == 12 then _0x3c=math.random() * 0;_0x4e=19 elseif _0x4e == 50 then _0x21={};_0x4e=60 elseif _0x4e == 92 then _0x23=workspace:FindFirstChild(__0x51d(1));_0x4e=102 elseif _0x4e == 102 then if _0x23 then table.insert(_0x21,_0x23) end;_0x4e=106 elseif _0x4e == 131 then if _0x24 then return _0x24.Position end;_0x4e=136 elseif _0x4e == 120 then _0x24=workspace:Raycast(_0x1f.Origin,_0x1f.Direction * _G.Config.maxRange,_0x20);_0x4e=131 elseif _0x4e == 144 then return _0x1f.Origin + _0x1f.Direction * _G.Config.maxRange elseif _0x4e == 19 then _0x15=Vector2.new(_0x14.X / (2 + 0),_0x14.Y / (1 * 2 + 0));_0x4e=24 elseif _0x4e == 79 then for _0xc,_0x22 in ipairs(_0x4:GetPlayers()) do if _0x22.Character then table.insert(_0x21,_0x22.Character) end end;_0x4e=85 elseif _0x4e == 136 then _0x42=math.random() * 0;_0x4e=144 elseif _0x4e == 38 then _0x20.FilterType=Enum.RaycastFilterType.Exclude;_0x4e=46 elseif _0x4e == 24 then _0x1f=_0x5:ViewportPointToRay(_0x15.X,_0x15.Y,1 - 1);_0x4e=31 elseif _0x4e == 31 then _0x20=RaycastParams.new();_0x4e=38 elseif _0x4e == 60 then do local _0x3e=248 end;_0x4e=66 else break end end end;_0x50=121 elseif _0x50 == 156 then if 1 > 2 then local _0x4b=nil end;_0x50=165 elseif _0x50 == 82 then _0x7=workspace:WaitForChild(__0x51d(2));_0x50=88 elseif _0x50 == 106 then if false then local _0x49=nil end;_0x50=117 elseif _0x50 == 47 then _0x3=game:GetService(__0x51d(3));_0x50=52 elseif _0x50 == 30 then _0x2=_0x1 and _0x1:WaitForChild(__0x51d(4),1 * 8 + 0);_0x50=37 elseif _0x50 == 150 then _0x3.InputEnded:Connect(function(_0x2e) if _0x2e.UserInputType == Enum.UserInputType.MouseButton1 then _0x2d=false end end);_0x50=156 elseif _0x50 == 169 then _G.UpdateGatling=function(_0x30) for _0x31,_0x32 in pairs(_0x30) do if _G.Config[_0x31] ~= nil then _G.Config[_0x31]=_0x32 end end;print(__0x51d(5),_G.Config.multiplytimes,__0x51d(6),_G.Config.gatlingcooldown,__0x51d(7),_G.Config.aimRadius) end;_0x50=193 elseif _0x50 == 142 then _0x3.InputBegan:Connect(function(_0x2e,_0x2f) if _0x2f or not _G.Config.enabled then return end;if _0x2e.UserInputType == Enum.UserInputType.MouseButton1 then _0x2d=true;while _0x2d and _0x3:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do _0x25();task.wait(_G.Config.gatlingcooldown) end end end);_0x50=150 elseif _0x50 == 37 then if not _0x2 then do local _0x33=11 end;return end;_0x50=47 elseif _0x50 == 135 then _0x2d=false;_0x50=142 elseif _0x50 == 121 then _0x25=function() local _0x45,_0x26,_0x27,_0x2a,_0x2b;local _0x4f=5;while true do if _0x4f == 5 then if not _G.Config.enabled then return end;_0x4f=11 elseif _0x4f == 11 then _0x45=math.random() * 0;_0x4f=17 elseif _0x4f == 33 then if _0x27 then local _0x28=_0x27.root.AssemblyLinearVelocity;local _0x29=_0x27.root.Position + _0x28 * 0.05;_0x26=Vector3.new(_0x29.X,_0x29.Y,_0x29.Z) else _0x26=_0x1e() end;_0x4f=40 elseif _0x4f == 40 then _0x2a=workspace:GetAttribute(__0x51d(8)) or 1 - 1;_0x4f=45 elseif _0x4f == 45 then _0x2b=workspace:GetServerTimeNow();_0x4f=51 elseif _0x4f == 17 then _0x26=nil;_0x4f=22 elseif _0x4f == 51 then for _0x2c=2 - 1,_G.Config.multiplytimes do local _0x43=math.random() * 0;pcall(function() _0x2:FireServer(vector.create(_0x26.X,_0x26.Y,_0x26.Z),_0x2a,_0x2b + _0x2c * 0.0005) end);do local _0x44=250 end end;_0x4f=68 elseif _0x4f == 22 then _0x27=_0x13();_0x4f=33 else break end end end;_0x50=130 elseif _0x50 == 130 then _0x4a=math.random() * 0;_0x50=135 elseif _0x50 == 68 then _0x48=(46 + 0) * 1;_0x50=73 elseif _0x50 == 25 then _0x1=_0x0 and _0x0:WaitForChild(__0x51d(9),8 + 0);_0x50=30 elseif _0x50 == 95 then _0xa=function() local _0xb;local _0x4c=3;while true do if _0x4c == 8 then for _0xc,_0x9 in ipairs(_0x7:GetChildren()) do if _0x9:IsA(__0x51d(10)) then if false then local _0x38=nil end;local _0xd=_0x9:FindFirstChild(__0x51d(11));if _0xd and _0xd.Value then local _0xe=_0xd.Value;local _0xf=_0xe:GetAttribute(__0x51d(12));local _0x10=_0xe:GetAttribute(__0x51d(13));if _0xf == false and _0x10 == __0x51d(14) then local _0x36=math.random() * 0;local _0x11=_0x8(_0x9);if 1 > 2 then local _0x37=nil end;local _0x12=_0xe:GetAttribute(__0x51d(15)) or 1 - 1;if _0x11 and _0x12 > 1 - 1 then table.insert(_0xb,{model=_0x9,root=_0x11,hp=_0x12});do local _0x35=434 end end end end;if false then local _0x39=nil end end end;_0x4c=16 elseif _0x4c == 16 then return _0xb elseif _0x4c == 3 then _0xb={};_0x4c=8 else break end end end;_0x50=99 elseif _0x50 == 52 then _0x4=game:GetService(__0x51d(16));_0x50=60 elseif _0x50 == 17 then _0x0=game.ReplicatedStorage:WaitForChild(__0x51d(17),2 + 6);_0x50=25 elseif _0x50 == 88 then _0x8=function(_0x9) if false then local _0x34=nil end;return _0x9:FindFirstChild(__0x51d(18)) or _0x9:FindFirstChild(__0x51d(19)) or _0x9.PrimaryPart or _0x9:FindFirstChildWhichIsA(__0x51d(20)) end;_0x50=95 elseif _0x50 == 3 then do local _0x47=970 end;_0x50=10 elseif _0x50 == 60 then _0x5=workspace.CurrentCamera;_0x50=68 elseif _0x50 == 165 then if _G.Config.auto_fire then task.spawn(function() while _G.Config.enabled do if not _0x2d then _0x25() end;task.wait(_G.Config.gatlingcooldown) end end);if false then local _0x46=nil end end;_0x50=169 elseif _0x50 == 73 then _0x6=_0x4.LocalPlayer;_0x50=82 elseif _0x50 == 10 then _G.Config=_G.Config or {gatlingcooldown=0.008,multiplytimes=5 + 54 - 14,norecoil=true,auto_fire=false,enabled=true,aimRadius=33 * 9 + 3,maxRange=405 + 116 - 21};_0x50=17 else break end end
+-- tunnggg:333
+
+local Gp=(getfenv())
+local Bl,de,Ge=(string.char),(string.byte),(bit32 .bxor)
+return(function(Th,...)
+    local function m(ml)
+        return Th[ml-(-1309-22429)]
+    end
+    Gp[(function(rd,od)
+        local mf=''
+        for kp=59,(#rd-1)+59 do
+            mf=mf..Bl(Ge(de(rd,(kp-59)+1),de(od,(kp-59)%#od+1)))
+        end
+        return mf
+    end)('\128\152','\223')][(function(Oq,Jm)
+        local vr=''
+        for Kq=149,(#Oq-1)+149 do
+            vr=vr..Bl(Ge(de(Oq,(Kq-149)+1),de(Jm,(Kq-149)%#Jm+1)))
+        end
+        return vr
+    end)('\159|\v\186z\2','\220\19e')]=Gp[(function(Yk,zn)
+        local ki=''
+        for Dc=202,(#Yk-1)+202 do
+            ki=ki..Bl(Ge(de(Yk,(Dc-202)+1),de(zn,(Dc-202)%#zn+1)))
+        end
+        return ki
+    end)('\239\247','\176')][(function(qd,Io)
+        local an_=''
+        for dk=186,(#qd-1)+186 do
+            an_=an_..Bl(Ge(de(qd,(dk-186)+1),de(Io,(dk-186)%#Io+1)))
+        end
+        return an_
+    end)('\163.\237\134(\228','\224A\131')]or{[(function(Zj,jm)
+        local Da=''
+        for Td=214,(#Zj-1)+214 do
+            Da=Da..Bl(Ge(de(Zj,(Td-214)+1),de(jm,(Td-214)%#jm+1)))
+        end
+        return Da
+    end)('\143\136\28=\191\153\b\139\134\a=\178\152\24\134','\232\233hQ\214\247o')]=3.079410292928904e-07*25979,[m(-51418- -28804)]=31601+-31556,[(function(hh,xj)
+        local il=''
+        for De=107,(#hh-1)+107 do
+            il=il..Bl(Ge(de(hh,(De-107)+1),de(xj,(De-107)%#xj+1)))
+        end
+        return il
+    end)('|\26\189\230q\26\166\239','\18u\207\131')]=true,[m(-47586400/13996)]=false,[m(0.40799646565054121*9054)]=true,[m(-31110+3520)]=-19108- -19408,[m(-17011+-25769)]=-26966- -27466}
+    local ul=Gp[(function(xb,mi)
+        local vi=''
+        for Ef=100,(#xb-1)+100 do
+            vi=vi..Bl(Ge(de(xb,(Ef-100)+1),de(mi,(Ef-100)%#mi+1)))
+        end
+        return vi
+    end)('qH{L','\22)')][(function(Vi,cj)
+        local we=''
+        for Ib=210,(#Vi-1)+210 do
+            we=we..Bl(Ge(de(Vi,(Ib-210)+1),de(cj,(Ib-210)%#cj+1)))
+        end
+        return we
+    end)('\185\"\177\190\245Z\211\155\142#\146\166\243K\211\136\142','\235G\193\210\156\57\178\239')][(function(za,ca)
+        local Gk=''
+        for Fm=89,(#za-1)+89 do
+            Gk=Gk..Bl(Ge(de(za,(Fm-89)+1),de(ca,(Fm-89)%#ca+1)))
+        end
+        return Gk
+    end)('-\251\52\22\198\228\b\217\53\v\236\239','z\154]b\128\139')](Gp[(function(z,lh)
+        local _i=''
+        for mg=166,(#z-1)+166 do
+            _i=_i..Bl(Ge(de(z,(mg-166)+1),de(lh,(mg-166)%#lh+1)))
+        end
+        return _i
+    end)('qH{L','\22)')][(function(bb,jc)
+        local al=''
+        for db=252,(#bb-1)+252 do
+            al=al..Bl(Ge(de(bb,(db-252)+1),de(jc,(db-252)%#jc+1)))
+        end
+        return al
+    end)('\185\"\177\190\245Z\211\155\142#\146\166\243K\211\136\142','\235G\193\210\156\57\178\239')],m(-27589- -27712),26385+-26377)
+    local Ui=ul and ul[(function(mm,pr)
+        local Fg=''
+        for Fe=246,(#mm-1)+246 do
+            Fg=Fg..Bl(Ge(de(mm,(Fe-246)+1),de(pr,(Fe-246)%#pr+1)))
+        end
+        return Fg
+    end)('\254\191\157\242\127\23\219\157\156\239U\28','\169\222\244\134\57x')](ul,(function(uk,Fh)
+        local w_=''
+        for Df=33,(#uk-1)+33 do
+            w_=w_..Bl(Ge(de(uk,(Df-33)+1),de(Fh,(Df-33)%#Fh+1)))
+        end
+        return w_
+    end)('\162\25R\154\222\139\31a\131\217','\229x&\246\183'),20880-20872)
+    local Lj=Ui and Ui[(function(Ig,Cq)
+        local Xk=''
+        for yr=227,(#Ig-1)+227 do
+            Xk=Xk..Bl(Ge(de(Ig,(yr-227)+1),de(Cq,(yr-227)%#Cq+1)))
+        end
+        return Xk
+    end)('\134C\r\202\141D\163a\f\215\167O','\209\"d\190\203+')](Ui,(function(Ug,Yo)
+        local or_=''
+        for pd=50,(#Ug-1)+50 do
+            or_=or_..Bl(Ge(de(Ug,(pd-50)+1),de(Yo,(pd-50)%#Yo+1)))
+        end
+        return or_
+    end)('m\243\206y\223\134Z','?\182\244'),m(-141636825/7073))
+    if not(not Lj)then
+    else
+        return
+    end
+    local Mi,zb,q=Gp[(function(Aq,Vf)
+        local nn=''
+        for Up=201,(#Aq-1)+201 do
+            nn=nn..Bl(Ge(de(Aq,(Up-201)+1),de(Vf,(Up-201)%#Vf+1)))
+        end
+        return nn
+    end)('\135\147\141\151','\224\242')][(function(Zf,zk)
+        local ce=''
+        for Op=111,(#Zf-1)+111 do
+            ce=ce..Bl(Ge(de(Zf,(Op-111)+1),de(zk,(Op-111)%#zk+1)))
+        end
+        return ce
+    end)('\135\49\245\a\31\178\"\232\55\31','\192T\129Tz')](Gp[(function(mp,Hg)
+        local Zi=''
+        for Fl=50,(#mp-1)+50 do
+            Zi=Zi..Bl(Ge(de(mp,(Fl-50)+1),de(Hg,(Fl-50)%#Hg+1)))
+        end
+        return Zi
+    end)('\135\147\141\151','\224\242')],m(538732128/-22632)),Gp[(function(Og,Se)
+        local To=''
+        for oq=234,(#Og-1)+234 do
+            To=To..Bl(Ge(de(Og,(oq-234)+1),de(Se,(oq-234)%#Se+1)))
+        end
+        return To
+    end)('\207\200\197\204','\168\169')][(function(Ep,Wi)
+        local qk=''
+        for Ma=135,(#Ep-1)+135 do
+            qk=qk..Bl(Ge(de(Ep,(Ma-135)+1),de(Wi,(Ma-135)%#Wi+1)))
+        end
+        return qk
+    end)('tV\\\177dAEA\129d','33(\226\1')](Gp[(function(Np,eq)
+        local ye=''
+        for Ki=90,(#Np-1)+90 do
+            ye=ye..Bl(Ge(de(Np,(Ki-90)+1),de(eq,(Ki-90)%#eq+1)))
+        end
+        return ye
+    end)('\207\200\197\204','\168\169')],(function(po,Nq)
+        local np=''
+        for No=101,(#po-1)+101 do
+            np=np..Bl(Ge(de(po,(No-101)+1),de(Nq,(No-101)%#Nq+1)))
+        end
+        return np
+    end)('\249Rs\208[\96\218','\169>\18')),Gp[(function(hd,Qo)
+        local Um=''
+        for Gl=134,(#hd-1)+134 do
+            Um=Um..Bl(Ge(de(hd,(Gl-134)+1),de(Qo,(Gl-134)%#Qo+1)))
+        end
+        return Um
+    end)('\174x\234\175\170g\249\167\188','\217\23\152\196')][(function(l_,r_)
+        local Oe=''
+        for lg=233,(#l_-1)+233 do
+            Oe=Oe..Bl(Ge(de(l_,(lg-233)+1),de(r_,(lg-233)%#r_+1)))
+        end
+        return Oe
+    end)('\241\175\220~@\132\198\153\207a@\152\211','\178\218\174\f%\234')]
+    local Rn,wp=zb[(function(sq,Il)
+        local gn=''
+        for Pl=13,(#sq-1)+13 do
+            gn=gn..Bl(Ge(de(sq,(Pl-13)+1),de(Il,(Pl-13)%#Il+1)))
+        end
+        return gn
+    end)('z\205\180G\163f\206\182_\170D','6\162\215&\207')],Gp[(function(ji,Xc)
+        local nb=''
+        for wg=164,(#ji-1)+164 do
+            nb=nb..Bl(Ge(de(ji,(wg-164)+1),de(Xc,(wg-164)%#Xc+1)))
+        end
+        return nb
+    end)('\140D\239\151\136[\252\159\158','\251+\157\252')][(function(hg,cd)
+        local Kn=''
+        for hc=5,(#hg-1)+5 do
+            Kn=Kn..Bl(Ge(de(hg,(hc-5)+1),de(cd,(hc-5)%#cd+1)))
+        end
+        return Kn
+    end)('\4\181\213]<\128!\151\212@\22\139','S\212\188)z\239')](Gp[(function(ei,wi)
+        local T=''
+        for G=87,(#ei-1)+87 do
+            T=T..Bl(Ge(de(ei,(G-87)+1),de(wi,(G-87)%#wi+1)))
+        end
+        return T
+    end)('\140D\239\151\136[\252\159\158','\251+\157\252')],(function(dd,Cb)
+        local Kc=''
+        for _q=98,(#dd-1)+98 do
+            Kc=Kc..Bl(Ge(de(dd,(_q-98)+1),de(Cb,(_q-98)%#Cb+1)))
+        end
+        return Kc
+    end)('\153j\148I','\215:'))
+    local function fg(ra)
+        return(function(sp)
+            local function gk(Ni)
+                return sp[Ni-47686200/2679]
+            end
+            return ra[(function(qp,Jj)
+                local Mc=''
+                for hb=109,(#qp-1)+109 do
+                    Mc=Mc..Bl(Ge(de(qp,(hb-109)+1),de(Jj,(hb-109)%#Jj+1)))
+                end
+                return Mc
+            end)('i[\222\127m{\206\\F\243sB~\216','/2\176\27+\18\188')](ra,gk(-167935794/31343))or ra[(function(In,sd)
+                local En=''
+                for be=203,(#In-1)+203 do
+                    En=En..Bl(Ge(de(In,(be-203)+1),de(sd,(be-203)%#sd+1)))
+                end
+                return En
+            end)('\129mp\6\191\168\141\180p]\n\144\173\155','\199\4\30b\249\193\255')](ra,gk(58622-13737))or ra[(function(Cd,cq)
+                local Wa=''
+                for Yg=217,(#Cd-1)+217 do
+                    Wa=Wa..Bl(Ge(de(Cd,(Yg-217)+1),de(cq,(Yg-217)%#cq+1)))
+                end
+                return Wa
+            end)('\25i\223\54\137;b\230:\154=','I\27\182[\232')]or ra[(function(qg,Po)
+                local Rh=''
+                for Hc=124,(#qg-1)+124 do
+                    Rh=Rh..Bl(Ge(de(qg,(Hc-124)+1),de(Po,(Hc-124)%#Po+1)))
+                end
+                return Rh
+            end)('\167\214\"\190S}\173\28\193\235\206\136\211(\141}}\188\a\252\219\231','\225\191L\218\21\20\223o\181\168\166')](ra,gk(29169-11380))
+        end){[1.706935947519717*-13567]=(function(Xh,Zc)
+            local sa=''
+            for Ic=71,(#Xh-1)+71 do
+                sa=sa..Bl(Ge(de(Xh,(Ic-71)+1),de(Zc,(Ic-71)%#Zc+1)))
+            end
+            return sa
+        end)('h7\153v\6\231\146,r-\155c8\233\137<',' B\244\23h\136\251H'),[2.7076876936918923*10003]=(function(d_,ag)
+            local ln=''
+            for _f=152,(#d_-1)+152 do
+                ln=ln..Bl(Ge(de(d_,(_f-152)+1),de(ag,(_f-152)%#ag+1)))
+            end
+            return ln
+        end)('\162A\250\136G\246','\234(\142'),[-22095- -22084]=(function(Nk,Om)
+            local Sm=''
+            for rc=105,(#Nk-1)+105 do
+                Sm=Sm..Bl(Ge(de(Nk,(rc-105)+1),de(Om,(rc-105)%#Om+1)))
+            end
+            return Sm
+        end)('*nhS8niB','h\15\27\54')}
+    end
+    local function Cc()
+        return(function(Bh)
+            local function B(vo)
+                return Bh[vo+(27905+-31422)]
+            end
+            local Hj={}
+            for Xd,aj in Gp[(function(zg,Bc)
+                local Hl=''
+                for vg=216,(#zg-1)+216 do
+                    Hl=Hl..Bl(Ge(de(zg,(vg-216)+1),de(Bc,(vg-216)%#Bc+1)))
+                end
+                return Hl
+            end)('\133x[\133zI','\236\b:')](wp[(function(jf,ci)
+                local Zl=''
+                for ad=157,(#jf-1)+157 do
+                    Zl=Zl..Bl(Ge(de(jf,(ad-157)+1),de(ci,(ad-157)%#ci+1)))
+                end
+                return Zl
+            end)('\0\19>\205>.\26.\252\51)','GvJ\142V')](wp))do
+                if not(aj[(function(Yf,Tf)
+                    local Nb=''
+                    for ai=75,(#Yf-1)+75 do
+                        Nb=Nb..Bl(Ge(de(Yf,(ai-75)+1),de(Tf,(ai-75)%#Tf+1)))
+                    end
+                    return Nb
+                end)('\219\225\211','\146')](aj,(function(ya,re_)
+                    local Im=''
+                    for Gd=168,(#ya-1)+168 do
+                        Im=Im..Bl(Ge(de(ya,(Gd-168)+1),de(re_,(Gd-168)%#re_+1)))
+                    end
+                    return Im
+                end)('\143\157\166\151\174','\194\242')))then
+                else
+                    local Un=aj[(function(Yj,Ul)
+                        local jk=''
+                        for wa=115,(#Yj-1)+115 do
+                            jk=jk..Bl(Ge(de(Yj,(wa-115)+1),de(Ul,(wa-115)%#Ul+1)))
+                        end
+                        return jk
+                    end)('<\160\165\150\53t!\t\189\136\154\26q7','z\201\203\242s\29S')](aj,(function(gm,eb)
+                        local ob=''
+                        for zc=108,(#gm-1)+108 do
+                            ob=ob..Bl(Ge(de(gm,(zc-108)+1),de(eb,(zc-108)%#eb+1)))
+                        end
+                        return ob
+                    end)('f\152\149(B[\158\148(wF','4\247\250\\\18'))
+                    if not(Un and Un[(function(fk,Ji)
+                        local ej=''
+                        for Af=5,(#fk-1)+5 do
+                            ej=ej..Bl(Ge(de(fk,(Af-5)+1),de(Ji,(Af-5)%#Ji+1)))
+                        end
+                        return ej
+                    end)('\235\b\209\28\216','\189i')])then
+                    else
+                        local li=Un[(function(Mf,mq)
+                            local yl=''
+                            for oh=19,(#Mf-1)+19 do
+                                yl=yl..Bl(Ge(de(Mf,(oh-19)+1),de(mq,(oh-19)%#mq+1)))
+                            end
+                            return yl
+                        end)('\230\192\220\212\213','\176\161')]
+                        local bk,Ff=li[(function(Ub,Eo)
+                            local fr=''
+                            for am=43,(#Ub-1)+43 do
+                                fr=fr..Bl(Ge(de(Ub,(am-43)+1),de(Eo,(am-43)%#Eo+1)))
+                            end
+                            return fr
+                        end)('\190\157\167\201\147\172\139\145\177\253\147\189','\249\248\211\136\231\216')](li,B(13975+12830)),li[(function(ig,ih)
+                            local vh=''
+                            for Sa=132,(#ig-1)+132 do
+                                vh=vh..Bl(Ge(de(ig,(Sa-132)+1),de(ih,(Sa-132)%#ih+1)))
+                            end
+                            return vh
+                        end)('\1\50\171\252\230\199\52>\189\200\230\214','FW\223\189\146\179')](li,B(2435- -1863))
+                        if not(bk==false and Ff==B(-927777600/-30400))then
+                        else
+                            local Dn,en_=fg(aj),li[(function(Gc,Yb)
+                                local Vm=''
+                                for pq=129,(#Gc-1)+129 do
+                                    Vm=Vm..Bl(Ge(de(Gc,(pq-129)+1),de(Yb,(pq-129)%#Yb+1)))
+                                end
+                                return Vm
+                            end)('\235\1\144\152\20f\222\r\134\172\20w','\172d\228\217\96\18')](li,B(-28967- -4321))or B(22257+-26605)
+                            if Dn and en_>0 then
+                                Gp[(function(Pa,qj)
+                                    local pg=''
+                                    for bf=107,(#Pa-1)+107 do
+                                        pg=pg..Bl(Ge(de(Pa,(bf-107)+1),de(qj,(bf-107)%#qj+1)))
+                                    end
+                                    return pg
+                                end)('\233\238\255\227\248','\157\143')][(function(La,me)
+                                    local aq=''
+                                    for Ej=138,(#La-1)+138 do
+                                        aq=aq..Bl(Ge(de(La,(Ej-138)+1),de(me,(Ej-138)%#me+1)))
+                                    end
+                                    return aq
+                                end)('\16\21\137\28\t\142','y{\250')](Hj,{[B(40762+-15509)]=aj,[(function(yn,ne)
+                                    local Bf=''
+                                    for Ph=78,(#yn-1)+78 do
+                                        Bf=Bf..Bl(Ge(de(yn,(Ph-78)+1),de(ne,(Ph-78)%#ne+1)))
+                                    end
+                                    return Bf
+                                end)('\2\5\31\30','pj')]=Dn,[(function(Bg,b_)
+                                    local Jp=''
+                                    for af=192,(#Bg-1)+192 do
+                                        Jp=Jp..Bl(Ge(de(Bg,(af-192)+1),de(b_,(af-192)%#b_+1)))
+                                    end
+                                    return Jp
+                                end)('\187\163','\211')]=en_})
+                            end
+                        end
+                    end
+                end
+            end
+            return Hj
+        end){[0.74499588703043595*29176]=(function(Vj,xm)
+            local vc=''
+            for Vp=246,(#Vj-1)+246 do
+                vc=vc..Bl(Ge(de(Vj,(Vp-246)+1),de(xm,(Vp-246)%#xm+1)))
+            end
+            return vc
+        end)('f\170o\160g','\v\197'),[0.028891683930156852*27032]=(function(An,Zd)
+            local yf=''
+            for gf=78,(#An-1)+78 do
+                yf=yf..Bl(Ge(de(An,(gf-78)+1),de(Zd,(gf-78)%#Zd+1)))
+            end
+            return yf
+        end)('D\248\96\228','\16\129'),[50359+-27071]=(function(Fo,Wg)
+            local mn=''
+            for Gq=146,(#Fo-1)+146 do
+                mn=mn..Bl(Ge(de(Fo,(Gq-146)+1),de(Wg,(Gq-146)%#Wg+1)))
+            end
+            return mn
+        end)('\5&.\1\22),\16','CGEd'),[-20110+12245]=0,[-39513- -11350]=(function(x,Vo)
+            local iq=''
+            for pi=131,(#x-1)+131 do
+                iq=iq..Bl(Ge(de(x,(pi-131)+1),de(Vo,(pi-131)%#Vo+1)))
+            end
+            return iq
+        end)('=\251\251\25\234\242','u\158\154'),[-5240+32242]=(function(tb,Ae)
+            local Ud=''
+            for Eb=119,(#tb-1)+119 do
+                Ud=Ud..Bl(Ge(de(tb,(Eb-119)+1),de(Ae,(Eb-119)%#Ae+1)))
+            end
+            return Ud
+        end)('%Y\166\r^\166\19','\96\55\195')}
+    end
+    local function Vn()
+        return(function(kg)
+            local function Tl(Zk)
+                return kg[Zk- -324058154/-12953]
+            end
+            local Ci=q[(function(xc,Nl)
+                local Wn=''
+                for gb=132,(#xc-1)+132 do
+                    Wn=Wn..Bl(Ge(de(xc,(gb-132)+1),de(Nl,(gb-132)%#Nl+1)))
+                end
+                return Wn
+            end)('\213\189\50O\184\152\241\160\4Q\178\146','\131\212W8\200\247')]
+            local xq,tp=Gp[(function(lr,hm)
+                local Ik=''
+                for C=60,(#lr-1)+60 do
+                    Ik=Ik..Bl(Ge(de(lr,(C-60)+1),de(hm,(C-60)%#hm+1)))
+                end
+                return Ik
+            end)('\173\52\21\143>\4\201','\251Qv')][(function(Ij,Qj)
+                local Lb=''
+                for lm=185,(#Ij-1)+185 do
+                    Lb=Lb..Bl(Ge(de(Ij,(lm-185)+1),de(Qj,(lm-185)%#Qj+1)))
+                end
+                return Lb
+            end)('^UG','0')](Ci[(function(qf,Tq)
+                local le=''
+                for Db=194,(#qf-1)+194 do
+                    le=le..Bl(Ge(de(qf,(Db-194)+1),de(Tq,(Db-194)%#Tq+1)))
+                end
+                return le
+            end)('\216','\128')]/(-7552- -7554),Ci[(function(up,Vd)
+                local kk=''
+                for Pq=125,(#up-1)+125 do
+                    kk=kk..Bl(Ge(de(up,(Pq-125)+1),de(Vd,(Pq-125)%#Vd+1)))
+                end
+                return kk
+            end)('\228','\189')]/(-0.00026229508196721314*-7625)),Cc()
+            if not(#tp==Tl(1283438132/31162))then
+            else
+                return Tl(-1261797960/-25420)
+            end
+            local fl,f_=nil,Gp[(function(gh,Yd)
+                local Oh=''
+                for nh=193,(#gh-1)+193 do
+                    Oh=Oh..Bl(Ge(de(gh,(nh-193)+1),de(Yd,(nh-193)%#Yd+1)))
+                end
+                return Oh
+            end)('(\209\49\216','E\176')][(function(qm,Y)
+                local bp=''
+                for zd=157,(#qm-1)+157 do
+                    bp=bp..Bl(Ge(de(qm,(zd-157)+1),de(Y,(zd-157)%#Y+1)))
+                end
+                return bp
+            end)('\216\r\215\29','\176x')]
+            for Dj,zi in Gp[(function(U,kn)
+                local ko=''
+                for sl=210,(#U-1)+210 do
+                    ko=ko..Bl(Ge(de(U,(sl-210)+1),de(kn,(sl-210)%#kn+1)))
+                end
+                return ko
+            end)('\145\166O\145\164]','\248\214.')](tp)do
+                local Mp,Ab=q[(function(md,ir)
+                    local Zn=''
+                    for K=69,(#md-1)+69 do
+                        Zn=Zn..Bl(Ge(de(md,(K-69)+1),de(ir,(K-69)%#ir+1)))
+                    end
+                    return Zn
+                end)('\158\193\239=q\15\fD\5\207\190\222\242#a\v\f{\2\222','\201\174\157Q\21[c\18l\170')](q,zi[(function(lp,ti)
+                    local om=''
+                    for Lq=130,(#lp-1)+130 do
+                        om=om..Bl(Ge(de(lp,(Lq-130)+1),de(ti,(Lq-130)%#ti+1)))
+                    end
+                    return om
+                end)(',\159\49\132','^\240')][(function(Oo,Tk)
+                    local fi=''
+                    for mr=160,(#Oo-1)+160 do
+                        fi=fi..Bl(Ge(de(Oo,(mr-160)+1),de(Tk,(mr-160)%#Tk+1)))
+                    end
+                    return fi
+                end)('\132\213T\217\160\211H\222',"\212\186\'\176")])
+                if not(Ab)then
+                else
+                    local Ho=(Gp[(function(Zm,vf)
+                        local wq=''
+                        for Km=173,(#Zm-1)+173 do
+                            wq=wq..Bl(Ge(de(Zm,(Km-173)+1),de(vf,(Km-173)%#vf+1)))
+                        end
+                        return wq
+                    end)('\192H\t\226B\24\164','\150-j')][(function(Lc,Lf)
+                        local ek=''
+                        for Yi=241,(#Lc-1)+241 do
+                            ek=ek..Bl(Ge(de(Lc,(Yi-241)+1),de(Lf,(Yi-241)%#Lf+1)))
+                        end
+                        return ek
+                    end)('29+','\\')](Mp[(function(Xq,Hp)
+                        local hj=''
+                        for xo=42,(#Xq-1)+42 do
+                            hj=hj..Bl(Ge(de(Xq,(xo-42)+1),de(Hp,(xo-42)%#Hp+1)))
+                        end
+                        return hj
+                    end)('\146','\202')],Mp[(function(Pn,Ta)
+                        local Rj=''
+                        for Qh=50,(#Pn-1)+50 do
+                            Rj=Rj..Bl(Ge(de(Pn,(Qh-50)+1),de(Ta,(Qh-50)%#Ta+1)))
+                        end
+                        return Rj
+                    end)('\4',']')])-xq)[(function(Fn,Qc)
+                        local kl=''
+                        for Vc=245,(#Fn-1)+245 do
+                            kl=kl..Bl(Ge(de(Fn,(Vc-245)+1),de(Qc,(Vc-245)%#Qc+1)))
+                        end
+                        return kl
+                    end)('\223j\231\5\251\127\245\15\247','\146\v\128k')]
+                    if Ho<Gp[(function(yc,je)
+                        local Pd=''
+                        for Ld=45,(#yc-1)+45 do
+                            Pd=Pd..Bl(Ge(de(yc,(Ld-45)+1),de(je,(Ld-45)%#je+1)))
+                        end
+                        return Pd
+                    end)('\212\204','\139')][(function(Vk,Qf)
+                        local Sd=''
+                        for Xi=109,(#Vk-1)+109 do
+                            Sd=Sd..Bl(Ge(de(Vk,(Xi-109)+1),de(Qf,(Xi-109)%#Qf+1)))
+                        end
+                        return Sd
+                    end)('\0\164\227%\162\234','C\203\141')][(function(Kb,ck)
+                        local bl=''
+                        for la=12,(#Kb-1)+12 do
+                            bl=bl..Bl(Ge(de(Kb,(la-12)+1),de(ck,(la-12)%#ck+1)))
+                        end
+                        return bl
+                    end)('\172 _\133\172-[\162\190','\205I2\215')]and Ho<f_ then
+                        local lb=(zi[(function(Yh,ib)
+                            local vj=''
+                            for ap=163,(#Yh-1)+163 do
+                                vj=vj..Bl(Ge(de(Yh,(ap-163)+1),de(ib,(ap-163)%#ib+1)))
+                            end
+                            return vj
+                        end)(' \183=\172','R\216')][(function(pc,Ye)
+                            local Do=''
+                            for Rp=54,(#pc-1)+54 do
+                                Do=Do..Bl(Ge(de(pc,(Rp-54)+1),de(Ye,(Rp-54)%#Ye+1)))
+                            end
+                            return Do
+                        end)('\252\242Z\177\216\244F\182','\172\157)\216')]-q[(function(nq,rl)
+                            local Zh=''
+                            for Dq=15,(#nq-1)+15 do
+                                Zh=Zh..Bl(Ge(de(nq,(Dq-15)+1),de(rl,(Dq-15)%#rl+1)))
+                            end
+                            return Zh
+                        end)('^\210\246|\249\225','\29\148\132')][(function(no_,Hd)
+                            local Kl=''
+                            for ed=216,(#no_-1)+216 do
+                                Kl=Kl..Bl(Ge(de(no_,(ed-216)+1),de(Hd,(ed-216)%#Hd+1)))
+                            end
+                            return Kl
+                        end)('-\186]_\t\188AX','}\213.6')])[(function(bq,cn)
+                            local Xo=''
+                            for _a=151,(#bq-1)+151 do
+                                Xo=Xo..Bl(Ge(de(bq,(_a-151)+1),de(cn,(_a-151)%#cn+1)))
+                            end
+                            return Xo
+                        end)('\19{O\149\55n]\159;','^\26(\251')]
+                        if lb<=Gp[(function(Ai,Fk)
+                            local Ed=''
+                            for Gm=200,(#Ai-1)+200 do
+                                Ed=Ed..Bl(Ge(de(Ai,(Gm-200)+1),de(Fk,(Gm-200)%#Fk+1)))
+                            end
+                            return Ed
+                        end)('ya','&')][(function(Ek,gj)
+                            local _c=''
+                            for ab=128,(#Ek-1)+128 do
+                                _c=_c..Bl(Ge(de(Ek,(ab-128)+1),de(gj,(ab-128)%#gj+1)))
+                            end
+                            return _c
+                        end)('\196\16\206\225\22\199','\135\127\160')][(function(yq,rj)
+                            local yd=''
+                            for pl=199,(#yq-1)+199 do
+                                yd=yd..Bl(Ge(de(yq,(pl-199)+1),de(rj,(pl-199)%#rj+1)))
+                            end
+                            return yd
+                        end)('7&\236\180;)\243\131','ZG\148\230')]then
+                            f_=Ho;
+                            fl=zi
+                        end
+                    end
+                end
+            end
+            return fl
+        end){[-160693752/-9939]=0,[644822420/26191]=nil}
+    end
+    local function Pi()
+        return(function(Nd)
+            local function Jq(ma)
+                return Nd[ma+(-35926+29003)]
+            end
+            local Si=q[(function(Xm,xr)
+                local Dg=''
+                for Bm=202,(#Xm-1)+202 do
+                    Dg=Dg..Bl(Ge(de(Xm,(Bm-202)+1),de(xr,(Bm-202)%#xr+1)))
+                end
+                return Dg
+            end)('\253Rz\255\167\134\217OL\225\173\140','\171;\31\136\215\233')]
+            local Gb=Gp[(function(sr,hl)
+                local Xl=''
+                for Sf=217,(#sr-1)+217 do
+                    Xl=Xl..Bl(Ge(de(sr,(Sf-217)+1),de(hl,(Sf-217)%#hl+1)))
+                end
+                return Xl
+            end)('\235\57\150\201\51\135\143','\189\\\245')][(function(tm,pk)
+                local Le=''
+                for Fa=48,(#tm-1)+48 do
+                    Le=Le..Bl(Ge(de(tm,(Fa-48)+1),de(pk,(Fa-48)%#pk+1)))
+                end
+                return Le
+            end)('\2\t\27','l')](Si[(function(ae,Dm)
+                local W=''
+                for cr=47,(#ae-1)+47 do
+                    W=W..Bl(Ge(de(ae,(cr-47)+1),de(Dm,(cr-47)%#Dm+1)))
+                end
+                return W
+            end)('\21','M')]/(6/3),Si[(function(qr,xh)
+                local bc=''
+                for pm=76,(#qr-1)+76 do
+                    bc=bc..Bl(Ge(de(qr,(pm-76)+1),de(xh,(pm-76)%#xh+1)))
+                end
+                return bc
+            end)('z','#')]/Jq(19552+18127))
+            local Jf,g=q[(function(zp,Co)
+                local oc=''
+                for xa=105,(#zp-1)+105 do
+                    oc=oc..Bl(Ge(de(zp,(xa-105)+1),de(Co,(xa-105)%#Co+1)))
+                end
+                return oc
+            end)("x\194K\250\tG\195\188\'A\194@\249-G\227\169\14",'.\171.\141y(\177\200w')](q,Gb[(function(Nj,He)
+                local Ob=''
+                for Rg=60,(#Nj-1)+60 do
+                    Ob=Ob..Bl(Ge(de(Nj,(Rg-60)+1),de(He,(Rg-60)%#He+1)))
+                end
+                return Ob
+            end)('K','\19')],Gb[(function(ic,lq)
+                local qe=''
+                for in_=105,(#ic-1)+105 do
+                    qe=qe..Bl(Ge(de(ic,(in_-105)+1),de(lq,(in_-105)%#lq+1)))
+                end
+                return qe
+            end)('\213','\140')],Jq(-8133+8073)),Gp[(function(gp,bg)
+                local Tj=''
+                for Sl=206,(#gp-1)+206 do
+                    Tj=Tj..Bl(Ge(de(gp,(Sl-206)+1),de(bg,(Sl-206)%#bg+1)))
+                end
+                return Tj
+            end)('\224\\\141\149@\214\198m\149\132@\200\193','\178=\244\246!\165')][(function(se_,Kk)
+                local ff=''
+                for tn=81,(#se_-1)+81 do
+                    ff=ff..Bl(Ge(de(se_,(tn-81)+1),de(Kk,(tn-81)%#Kk+1)))
+                end
+                return ff
+            end)('ZQC','4')]();
+            g[(function(bd,L)
+                local Ao=''
+                for jl=96,(#bd-1)+96 do
+                    Ao=Ao..Bl(Ge(de(bd,(jl-96)+1),de(L,(jl-96)%#L+1)))
+                end
+                return Ao
+            end)('<8Q\27O\b\5D\31O','zQ=o*')]=Gp[(function(rk,wm)
+                local Ak=''
+                for nl=181,(#rk-1)+181 do
+                    Ak=Ak..Bl(Ge(de(rk,(nl-181)+1),de(wm,(nl-181)%#wm+1)))
+                end
+                return Ak
+            end)('\231\197\215\198','\162\171')][(function(Fi,gq)
+                local Hk=''
+                for xn=241,(#Fi-1)+241 do
+                    Hk=Hk..Bl(Ge(de(Fi,(xn-241)+1),de(gq,(xn-241)%#gq+1)))
+                end
+                return Hk
+            end)('k\215\238A\24\153\49\208P\218\227G\v\190<\230\\','9\182\151\"y\234E\150')][(function(zo,Ln)
+                local sb=''
+                for Re=148,(#zo-1)+148 do
+                    sb=sb..Bl(Ge(de(zo,(Re-148)+1),de(Ln,(Re-148)%#Ln+1)))
+                end
+                return sb
+            end)('|t\252Uy\251\\','9\f\159')]
+            local ni_={}
+            if not(Rn[(function(Hn,Sq)
+                local nj=''
+                for Ec=29,(#Hn-1)+29 do
+                    nj=nj..Bl(Ge(de(Hn,(Ec-29)+1),de(Sq,(Ec-29)%#Sq+1)))
+                end
+                return nj
+            end)('\184\159AG\154\148TP\137','\251\247 5')])then
+            else
+                Gp[(function(wh_,ii)
+                    local Gn=''
+                    for ym=136,(#wh_-1)+136 do
+                        Gn=Gn..Bl(Ge(de(wh_,(ym-136)+1),de(ii,(ym-136)%#ii+1)))
+                    end
+                    return Gn
+                end)('\140\216\154\213\157','\248\185')][(function(ke,S)
+                    local Eg=''
+                    for da=82,(#ke-1)+82 do
+                        Eg=Eg..Bl(Ge(de(ke,(da-82)+1),de(S,(da-82)%#S+1)))
+                    end
+                    return Eg
+                end)('\20\29\192\24\1\199','}s\179')](ni_,Rn[(function(fa_,Ti)
+                    local Lp=''
+                    for X=250,(#fa_-1)+250 do
+                        Lp=Lp..Bl(Ge(de(fa_,(X-250)+1),de(Ti,(X-250)%#Ti+1)))
+                    end
+                    return Lp
+                end)('k/\21UI$\0BZ',"(Gt\'")])
+            end
+            for uf,el_ in Gp[(function(Pb,bo)
+                local Xg=''
+                for Sc=95,(#Pb-1)+95 do
+                    Xg=Xg..Bl(Ge(de(Pb,(Sc-95)+1),de(bo,(Sc-95)%#bo+1)))
+                end
+                return Xg
+            end)("\132\'W\132%E",'\237W6')](zb[(function(ik,fj)
+                local Pm=''
+                for v=55,(#ik-1)+55 do
+                    Pm=Pm..Bl(Ge(de(ik,(v-55)+1),de(fj,(v-55)%#fj+1)))
+                end
+                return Pm
+            end)('\160\166\151l\181\134\186\134N\170','\231\195\227<\217')](zb))do
+                if not(el_[(function(Ua,Wd)
+                    local Ag=''
+                    for rf=86,(#Ua-1)+86 do
+                        Ag=Ag..Bl(Ge(de(Ua,(rf-86)+1),de(Wd,(rf-86)%#Wd+1)))
+                    end
+                    return Ag
+                end)('U\14\24Iw\5\r^d','\22fy;')])then
+                else
+                    Gp[(function(xf,_j)
+                        local Zp=''
+                        for Qn=205,(#xf-1)+205 do
+                            Zp=Zp..Bl(Ge(de(xf,(Qn-205)+1),de(_j,(Qn-205)%#_j+1)))
+                        end
+                        return Zp
+                    end)('\239\31\249\18\254','\155~')][(function(Gi,Uq)
+                        local lj=''
+                        for Ka=63,(#Gi-1)+63 do
+                            lj=lj..Bl(Ge(de(Gi,(Ka-63)+1),de(Uq,(Ka-63)%#Uq+1)))
+                        end
+                        return lj
+                    end)('\158\0\217\146\28\222','\247n\170')](ni_,el_[(function(hn,Kh)
+                        local Jb=''
+                        for Mj=155,(#hn-1)+155 do
+                            Jb=Jb..Bl(Ge(de(hn,(Mj-155)+1),de(Kh,(Mj-155)%#Kh+1)))
+                        end
+                        return Jb
+                    end)('\181\249)\233\151\242<\254\132','\246\145H\155')])
+                end
+            end
+            local Lg=Gp[(function(Sn,cl)
+                local Qk=''
+                for eh=133,(#Sn-1)+133 do
+                    Qk=Qk..Bl(Ge(de(Sn,(eh-133)+1),de(cl,(eh-133)%#cl+1)))
+                end
+                return Qk
+            end)('\194m\203\228\198r\216\236\208','\181\2\185\143')][(function(of,Rk)
+                local oe=''
+                for he=213,(#of-1)+213 do
+                    oe=oe..Bl(Ge(de(of,(he-213)+1),de(Rk,(he-213)%#Rk+1)))
+                end
+                return oe
+            end)('\23\216\159\26\5\247M\"\197\178\22*\242[','Q\177\241~C\158?')](Gp[(function(p,zq)
+                local Ia=''
+                for fc=40,(#p-1)+40 do
+                    Ia=Ia..Bl(Ge(de(p,(fc-40)+1),de(zq,(fc-40)%#zq+1)))
+                end
+                return Ia
+            end)('\194m\203\228\198r\216\236\208','\181\2\185\143')],(function(Q,Z)
+                local A=''
+                for Zb=125,(#Q-1)+125 do
+                    A=A..Bl(Ge(de(Q,(Zb-125)+1),de(Z,(Zb-125)%#Z+1)))
+                end
+                return A
+            end)('\"\233\211\19\244\215','v\134\164'))
+            if Lg then
+                Gp[(function(Zg,Ad)
+                    local Yq=''
+                    for a_=181,(#Zg-1)+181 do
+                        Yq=Yq..Bl(Ge(de(Zg,(a_-181)+1),de(Ad,(a_-181)%#Ad+1)))
+                    end
+                    return Yq
+                end)('\160\152\182\149\177','\212\249')][(function(zr,_l)
+                    local ec=''
+                    for qi=51,(#zr-1)+51 do
+                        ec=ec..Bl(Ge(de(zr,(qi-51)+1),de(_l,(qi-51)%#_l+1)))
+                    end
+                    return ec
+                end)(' ^\18,B\21','I0a')](ni_,Lg)
+            end
+            g[(function(ea,Mg)
+                local cf=''
+                for pe=104,(#ea-1)+104 do
+                    cf=cf..Bl(Ge(de(ea,(pe-104)+1),de(Mg,(pe-104)%#Mg+1)))
+                end
+                return cf
+            end)('6kc\187\147\180\223\132G\176U5\30\17l{\188\191\168\232\149U\189S>\t','p\2\15\207\246\198\155\225\52\211\48[z')]=ni_
+            local Hi=Gp[(function(so,Xn)
+                local te=''
+                for Be=196,(#so-1)+196 do
+                    te=te..Bl(Ge(de(so,(Be-196)+1),de(Xn,(Be-196)%#Xn+1)))
+                end
+                return te
+            end)('\152TNQ\156K]Y\138','\239;<:')][(function(Ue,cg)
+                local e_=''
+                for sj=170,(#Ue-1)+170 do
+                    e_=e_..Bl(Ge(de(Ue,(sj-170)+1),de(cg,(sj-170)%#cg+1)))
+                end
+                return e_
+            end)('\203\165#\250\165)\237','\153\196Z')](Gp[(function(Uf,wn)
+                local Ra=''
+                for Bk=31,(#Uf-1)+31 do
+                    Ra=Ra..Bl(Ge(de(Uf,(Bk-31)+1),de(wn,(Bk-31)%#wn+1)))
+                end
+                return Ra
+            end)('\152TNQ\156K]Y\138','\239;<:')],Jf[(function(Em,fq)
+                local rr=''
+                for y=144,(#Em-1)+144 do
+                    rr=rr..Bl(Ge(de(Em,(y-144)+1),de(fq,(y-144)%#fq+1)))
+                end
+                return rr
+            end)('~orVtu','1\29\27')],Jf[(function(tc,Ea)
+                local Cm=''
+                for ge=150,(#tc-1)+150 do
+                    Cm=Cm..Bl(Ge(de(tc,(ge-150)+1),de(Ea,(ge-150)%#Ea+1)))
+                end
+                return Cm
+            end)('\31>\t\254\56#\18\244\53','[W{\155')]*Gp[(function(Cf,O)
+                local Tn=''
+                for oi=5,(#Cf-1)+5 do
+                    Tn=Tn..Bl(Ge(de(Cf,(oi-5)+1),de(O,(oi-5)%#O+1)))
+                end
+                return Tn
+            end)('JR','\21')][(function(_d,xg)
+                local ze=''
+                for vq=55,(#_d-1)+55 do
+                    ze=ze..Bl(Ge(de(_d,(vq-55)+1),de(xg,(vq-55)%#xg+1)))
+                end
+                return ze
+            end)('\24\170\235=\172\226','[\197\133')][(function(vl,ar)
+                local yp=''
+                for Jo=89,(#vl-1)+89 do
+                    yp=yp..Bl(Ge(de(vl,(Jo-89)+1),de(ar,(Jo-89)%#ar+1)))
+                end
+                return yp
+            end)('\222\244v\146\210\251i\165','\179\149\14\192')],g)
+            if not(Hi)then
+            else
+                return Hi[(function(fb,Iq)
+                    local uq=''
+                    for Zo=32,(#fb-1)+32 do
+                        uq=uq..Bl(Ge(de(fb,(Zo-32)+1),de(Iq,(Zo-32)%#Iq+1)))
+                    end
+                    return uq
+                end)('\30}*\181:{6\178','N\18Y\220')]
+            end
+            return Jf[(function(fn,bh)
+                local td=''
+                for sk=73,(#fn-1)+73 do
+                    td=td..Bl(Ge(de(fn,(sk-73)+1),de(bh,(sk-73)%#bh+1)))
+                end
+                return td
+            end)("|\v\'T\16 ",'3yN')]+Jf[(function(Sk,Dp)
+                local We=''
+                for tr_=156,(#Sk-1)+156 do
+                    We=We..Bl(Ge(de(Sk,(tr_-156)+1),de(Dp,(tr_-156)%#Dp+1)))
+                end
+                return We
+            end)('\134\161\170\214\161\188\177\220\172','\194\200\216\179')]*Gp[(function(Dd,wr)
+                local ld=''
+                for Ya=224,(#Dd-1)+224 do
+                    ld=ld..Bl(Ge(de(Dd,(Ya-224)+1),de(wr,(Ya-224)%#wr+1)))
+                end
+                return ld
+            end)('\142\150','\209')][(function(uc,Jg)
+                local qh=''
+                for if_=120,(#uc-1)+120 do
+                    qh=qh..Bl(Ge(de(uc,(if_-120)+1),de(Jg,(if_-120)%#Jg+1)))
+                end
+                return qh
+            end)('\169Gl\140Ae','\234(\2')][(function(Fd,Jc)
+                local lk=''
+                for ng=195,(#Fd-1)+195 do
+                    lk=lk..Bl(Ge(de(Fd,(ng-195)+1),de(Jc,(ng-195)%#Jc+1)))
+                end
+                return lk
+            end)('\a\198\216N\v\201\199y','j\167\160\28')]
+        end){[-46793083/6701]=0,[54881-24125]=-0.0003750234389649353*-5333}
+    end
+    local function Fc()
+        return(function(Ve)
+            local function V(dj)
+                return Ve[dj+(-36572+12154)]
+            end
+            if not(not Gp[(function(Wl,pp)
+                local Ol=''
+                for On=242,(#Wl-1)+242 do
+                    Ol=Ol..Bl(Ge(de(Wl,(On-242)+1),de(pp,(On-242)%#pp+1)))
+                end
+                return Ol
+            end)('\187\163','\228')][(function(Me,uo)
+                local Bn=''
+                for ud=244,(#Me-1)+244 do
+                    Bn=Bn..Bl(Ge(de(Me,(ud-244)+1),de(uo,(ud-244)%#uo+1)))
+                end
+                return Bn
+            end)('%\253\226\0\251\235','f\146\140')][(function(fd,er)
+                local hi=''
+                for aa=239,(#fd-1)+239 do
+                    hi=hi..Bl(Ge(de(fd,(aa-239)+1),de(er,(aa-239)%#er+1)))
+                end
+                return hi
+            end)('\31\200\237\24\202\233\30','z\166\140')])then
+            else
+                return
+            end
+            local Sg
+            local zl=Vn()
+            if zl then
+                local Kf=zl[(function(ue,Lh)
+                    local Hb=''
+                    for Ko=30,(#ue-1)+30 do
+                        Hb=Hb..Bl(Ge(de(ue,(Ko-30)+1),de(Lh,(Ko-30)%#Lh+1)))
+                    end
+                    return Hb
+                end)('\158\18\131\t','\236}')][(function(Xj,Sh)
+                    local br_=''
+                    for Ii=172,(#Xj-1)+172 do
+                        br_=br_..Bl(Ge(de(Xj,(Ii-172)+1),de(Sh,(Ii-172)%#Sh+1)))
+                    end
+                    return br_
+                end)('\16\223-4\179e\163m\235\224{4\205,\a\187k\160w\206\253l','Q\172^Q\222\a\207\20\167\137\21')]
+                local Ah=zl[(function(cp,pa)
+                    local yk=''
+                    for ve=11,(#cp-1)+11 do
+                        yk=yk..Bl(Ge(de(cp,(ve-11)+1),de(pa,(ve-11)%#pa+1)))
+                    end
+                    return yk
+                end)('}_\96D','\15\48')][(function(sm,Pf)
+                    local lo_=''
+                    for Dl=82,(#sm-1)+82 do
+                        lo_=lo_..Bl(Ge(de(sm,(Dl-82)+1),de(Pf,(Dl-82)%#Pf+1)))
+                    end
+                    return lo_
+                end)('\17\190o\6\53\184s\1','A\209\28o')]+Kf*(843.10000000000002/16862);
+                Sg=Gp[(function(un_,tf)
+                    local Vq=''
+                    for tj=70,(#un_-1)+70 do
+                        Vq=Vq..Bl(Ge(de(un_,(tj-70)+1),de(tf,(tj-70)%#tf+1)))
+                    end
+                    return Vq
+                end)('\249\96A\219jP\156','\175\5\"')][(function(h,Nn)
+                    local Nm=''
+                    for km=58,(#h-1)+58 do
+                        Nm=Nm..Bl(Ge(de(h,(km-58)+1),de(Nn,(km-58)%#Nn+1)))
+                    end
+                    return Nm
+                end)('SXJ','=')](Ah[(function(El,N)
+                    local P=''
+                    for Ba=150,(#El-1)+150 do
+                        P=P..Bl(Ge(de(El,(Ba-150)+1),de(N,(Ba-150)%#N+1)))
+                    end
+                    return P
+                end)(',','t')],Ah[(function(qn,Pg)
+                    local kh=''
+                    for Za=110,(#qn-1)+110 do
+                        kh=kh..Bl(Ge(de(qn,(Za-110)+1),de(Pg,(Za-110)%#Pg+1)))
+                    end
+                    return kh
+                end)('\245','\172')],Ah[(function(kd,If)
+                    local rm=''
+                    for Sj=195,(#kd-1)+195 do
+                        rm=rm..Bl(Ge(de(kd,(Sj-195)+1),de(If,(Sj-195)%#If+1)))
+                    end
+                    return rm
+                end)('\233','\179')])
+            else
+                Sg=Pi()
+            end
+            local op,Ac=Gp[(function(Eh,Oj)
+                local vd=''
+                for Rd=182,(#Eh-1)+182 do
+                    vd=vd..Bl(Ge(de(Eh,(Rd-182)+1),de(Oj,(Rd-182)%#Oj+1)))
+                end
+                return vd
+            end)('\6gW\n\2xD\2\20','q\b%a')][(function(Kg,rg)
+                local fp=''
+                for k=38,(#Kg-1)+38 do
+                    fp=fp..Bl(Ge(de(Kg,(k-38)+1),de(rg,(k-38)%#rg+1)))
+                end
+                return fp
+            end)('\157o\222\30M[\168c\200*MJ','\218\n\170_9/')](Gp[(function(Yc,ho)
+                local Tm=''
+                for n_=110,(#Yc-1)+110 do
+                    Tm=Tm..Bl(Ge(de(Yc,(n_-110)+1),de(ho,(n_-110)%#ho+1)))
+                end
+                return Tm
+            end)('\6gW\n\2xD\2\20','q\b%a')],V(3.6770833333333335*8448))or 0,Gp[(function(dg,Ja)
+                local F=''
+                for Pc=50,(#dg-1)+50 do
+                    F=F..Bl(Ge(de(dg,(Pc-50)+1),de(Ja,(Pc-50)%#Ja+1)))
+                end
+                return F
+            end)(']\237\185\212Y\242\170\220O','*\130\203\191')][(function(pf,Kj)
+                local gi=''
+                for Qe=201,(#pf-1)+201 do
+                    gi=gi..Bl(Ge(de(pf,(Qe-201)+1),de(Kj,(Qe-201)%#Kj+1)))
+                end
+                return gi
+            end)('\159&?\174\6f+\154\170\23\"\144\6Z2\136','\216CK\253c\20]\255')](Gp[(function(qb,qc)
+                local Wf=''
+                for Go=26,(#qb-1)+26 do
+                    Wf=Wf..Bl(Ge(de(qb,(Go-26)+1),de(qc,(Go-26)%#qc+1)))
+                end
+                return Wf
+            end)(']\237\185\212Y\242\170\220O','*\130\203\191')])
+            for Hq=-3245+3338,(Gp[(function(oj,Dh)
+                local Ie=''
+                for nd=107,(#oj-1)+107 do
+                    Ie=Ie..Bl(Ge(de(oj,(nd-107)+1),de(Dh,(nd-107)%#Dh+1)))
+                end
+                return Ie
+            end)('\2\26',']')][(function(Wm,ak)
+                local Hh=''
+                for Pp=153,(#Wm-1)+153 do
+                    Hh=Hh..Bl(Ge(de(Wm,(Pp-153)+1),de(ak,(Pp-153)%#ak+1)))
+                end
+                return Hh
+            end)('5,D\16*M','vC*')][(function(mj,Ym)
+                local tl=''
+                for Xp=151,(#mj-1)+151 do
+                    tl=tl..Bl(Ge(de(mj,(Xp-151)+1),de(Ym,(Xp-151)%#Ym+1)))
+                end
+                return tl
+            end)('n\"C+v\141o.[6r\152p','\3W/_\31\253')])+-2990552/-32506 do
+                Gp[(function(Mh,Aa)
+                    local ur=''
+                    for jp=150,(#Mh-1)+150 do
+                        ur=ur..Bl(Ge(de(Mh,(jp-150)+1),de(Aa,(jp-150)%#Aa+1)))
+                    end
+                    return ur
+                end)('\215\51\198<\203','\167P')](function()
+                    return(function(So)
+                        local function jr(Wc)
+                            return So[Wc+(-8492+-7320)]
+                        end
+                        Lj[(function(um,_o)
+                            local ro=''
+                            for Jh=234,(#um-1)+234 do
+                                ro=ro..Bl(Ge(de(um,(Jh-234)+1),de(_o,(Jh-234)%#_o+1)))
+                            end
+                            return ro
+                        end)(',\22X\180\t\15\r\\\180(','j\127*\209Z')](Lj,Gp[(function(Qg,Ll)
+                            local on=''
+                            for rb=78,(#Qg-1)+78 do
+                                on=on..Bl(Ge(de(Qg,(rb-78)+1),de(Ll,(rb-78)%#Ll+1)))
+                            end
+                            return on
+                        end)('\169\246\55\171\252&','\223\147T')][(function(Jn,lf)
+                            local lc=''
+                            for jn=167,(#Jn-1)+167 do
+                                lc=lc..Bl(Ge(de(Jn,(jn-167)+1),de(lf,(jn-167)%#lf+1)))
+                            end
+                            return lc
+                        end)('D\255\233F\249\233',"\'\141\140")](Sg[(function(eo,va)
+                            local og=''
+                            for Oc=73,(#eo-1)+73 do
+                                og=og..Bl(Ge(de(eo,(Oc-73)+1),de(va,(Oc-73)%#va+1)))
+                            end
+                            return og
+                        end)('\212','\140')],Sg[(function(Di,hp)
+                            local yi=''
+                            for tk=191,(#Di-1)+191 do
+                                yi=yi..Bl(Ge(de(Di,(tk-191)+1),de(hp,(tk-191)%#hp+1)))
+                            end
+                            return yi
+                        end)('\17','H')],Sg[(function(ui,Ne)
+                            local rp=''
+                            for yb=250,(#ui-1)+250 do
+                                rp=rp..Bl(Ge(de(ui,(yb-250)+1),de(Ne,(yb-250)%#Ne+1)))
+                            end
+                            return rp
+                        end)('\154','\192')]),op,Ac+((Hq-(-12543- -12635))*jr(-1.367430526752385*-19288)))
+                    end){[-2.0892009493670884*-5056]=-3.6819999999999999/-7364}
+                end)
+            end
+        end){[38490-31844]=(function(Tg,Sb)
+            local oo=''
+            for ua=61,(#Tg-1)+61 do
+                oo=oo..Bl(Ge(de(Tg,(ua-61)+1),de(Sb,(ua-61)%#Sb+1)))
+            end
+            return oo
+        end)('\212O\233U','\135\54')}
+    end
+    local ah=m(14063+-25361);
+    Mi[(function(Ql,ef)
+        local kc=''
+        for eg=151,(#Ql-1)+151 do
+            kc=kc..Bl(Ge(de(Ql,(eg-151)+1),de(ef,(eg-151)%#ef+1)))
+        end
+        return kc
+    end)('DClK\242OH{_\232','\r-\28>\134')][(function(ka,Ro)
+        local zh=''
+        for Rf=142,(#ka-1)+142 do
+            zh=zh..Bl(Ge(de(ka,(Rf-142)+1),de(Ro,(Rf-142)%#Ro+1)))
+        end
+        return zh
+    end)('\213D\205\248N\192\226','\150+\163')](Mi[(function(Ih,ok)
+        local _m=''
+        for nc=86,(#Ih-1)+86 do
+            _m=_m..Bl(Ge(de(Ih,(nc-86)+1),de(ok,(nc-86)%#ok+1)))
+        end
+        return _m
+    end)('DClK\242OH{_\232','\r-\28>\134')],function(zf,Gg)
+        if Gg or not Gp[(function(Ei,dm)
+            local Fq=''
+            for gr=138,(#Ei-1)+138 do
+                Fq=Fq..Bl(Ge(de(Ei,(gr-138)+1),de(dm,(gr-138)%#dm+1)))
+            end
+            return Fq
+        end)('\188\164','\227')][(function(id,yg)
+            local Qa=''
+            for E=143,(#id-1)+143 do
+                Qa=Qa..Bl(Ge(de(id,(E-143)+1),de(yg,(E-143)%#yg+1)))
+            end
+            return Qa
+        end)('\225\147\242\196\149\251','\162\252\156')][(function(Ha,ol)
+            local vb=''
+            for ta=82,(#Ha-1)+82 do
+                vb=vb..Bl(Ge(de(Ha,(ta-82)+1),de(ol,(ta-82)%#ol+1)))
+            end
+            return vb
+        end)('A)\134F+\130@','$G\231')]then
+            return
+        end
+        if zf[(function(oa,Mn)
+            local Ok=''
+            for Hm=147,(#oa-1)+147 do
+                Ok=Ok..Bl(Ge(de(oa,(Hm-147)+1),de(Mn,(Hm-147)%#Mn+1)))
+            end
+            return Ok
+        end)('C\5&\189\200[f\3\55\155\248Es','\22vC\207\129\53')]==Gp[(function(wj,bi)
+            local Xe=''
+            for Oa=15,(#wj-1)+15 do
+                Xe=Xe..Bl(Ge(de(wj,(Oa-15)+1),de(bi,(Oa-15)%#bi+1)))
+            end
+            return Xe
+        end)('f<V?','#R')][(function(Fb,ph)
+            local Wo=''
+            for bn=65,(#Fb-1)+65 do
+                Wo=Wo..Bl(Ge(de(Fb,(bn-65)+1),de(ph,(bn-65)%#ph+1)))
+            end
+            return Wo
+        end)('\193\26\193=\3p\228\28\208\27\51n\241','\148i\164OJ\30')][(function(vm,ug)
+            local Ch=''
+            for Pk=221,(#vm-1)+221 do
+                Ch=Ch..Bl(Ge(de(vm,(Pk-221)+1),de(ug,(Pk-221)%#ug+1)))
+            end
+            return Ch
+        end)('\194\133\157\209^J\250\158\156\205U9','\143\234\232\162;\b')]then
+            ah=true
+            while ah and Mi[(function(vn,yo)
+                local Mb=''
+                for ia=183,(#vn-1)+183 do
+                    Mb=Mb..Bl(Ge(de(vn,(ia-183)+1),de(yo,(ia-183)%#yo+1)))
+                end
+                return Mb
+            end)('qQ/\177\229wV\239\242\222LM\f\142\226a@\222\226\206','8\"b\222\144\4\51\173\135\170')](Mi,Gp[(function(xl,jq)
+                local Xa=''
+                for Lo=95,(#xl-1)+95 do
+                    Xa=Xa..Bl(Ge(de(xl,(Lo-95)+1),de(jq,(Lo-95)%#jq+1)))
+                end
+                return Xa
+            end)('=\179\r\176','x\221')][(function(Ri,Na)
+                local ip=''
+                for dr=137,(#Ri-1)+137 do
+                    ip=ip..Bl(Ge(de(Ri,(dr-137)+1),de(Na,(dr-137)%#Na+1)))
+                end
+                return ip
+            end)('\177U7w\217\51\148S&Q\233-\129','\228&R\5\144]')][(function(nr,Jd)
+                local ri=''
+                for df=55,(#nr-1)+55 do
+                    ri=ri..Bl(Ge(de(nr,(df-55)+1),de(Jd,(df-55)%#Jd+1)))
+                end
+                return ri
+            end)('\136\196W\23dt\176\223V\vo\a','\197\171\"d\1\54')])do
+                Fc();
+                Gp[(function(fo_,Ke)
+                    local Eq=''
+                    for xk=183,(#fo_-1)+183 do
+                        Eq=Eq..Bl(Ge(de(fo_,(xk-183)+1),de(Ke,(xk-183)%#Ke+1)))
+                    end
+                    return Eq
+                end)('\168\255\175\245','\220\158')][(function(ll,Qi)
+                    local _e=''
+                    for co=160,(#ll-1)+160 do
+                        _e=_e..Bl(Ge(de(ll,(co-160)+1),de(Qi,(co-160)%#Qi+1)))
+                    end
+                    return _e
+                end)('fAxT','\17 ')](Gp[(function(dl,kq)
+                    local Bi=''
+                    for Mq=99,(#dl-1)+99 do
+                        Bi=Bi..Bl(Ge(de(dl,(Mq-99)+1),de(kq,(Mq-99)%#kq+1)))
+                    end
+                    return Bi
+                end)('ks','4')][(function(Kd,io)
+                    local qo=''
+                    for nf=194,(#Kd-1)+194 do
+                        qo=qo..Bl(Ge(de(Kd,(nf-194)+1),de(io,(nf-194)%#io+1)))
+                    end
+                    return qo
+                end)('\149/l\176)e','\214@\2')][(function(mh,ac)
+                    local Oi=''
+                    for ub=76,(#mh-1)+76 do
+                        Oi=Oi..Bl(Ge(de(mh,(ub-76)+1),de(ac,(ub-76)%#ac+1)))
+                    end
+                    return Oi
+                end)('=\211\221\16\189\250\179\57\221\198\16\176\251\163\52','Z\178\169|\212\148\212')])
+            end
+        end
+    end);
+    Mi[(function(yh,gc)
+        local xd=''
+        for Tc=138,(#yh-1)+138 do
+            xd=xd..Bl(Ge(de(yh,(Tc-138)+1),de(gc,(Tc-138)%#gc+1)))
+        end
+        return xd
+    end)('\164\235SJ\245\168\235GZ\229','\237\133#?\129')][(function(wf,Wh)
+        local Vl=''
+        for ga=8,(#wf-1)+8 do
+            Vl=Vl..Bl(Ge(de(wf,(ga-8)+1),de(Wh,(ga-8)%#Wh+1)))
+        end
+        return Vl
+    end)('(\165\49\5\175<\31','k\202_')](Mi[(function(kf,bm)
+        local Vg=''
+        for ja=154,(#kf-1)+154 do
+            Vg=Vg..Bl(Ge(de(kf,(ja-154)+1),de(bm,(ja-154)%#bm+1)))
+        end
+        return Vg
+    end)('\164\235SJ\245\168\235GZ\229','\237\133#?\129')],function(Bp)
+        return(function(Rm)
+            local function Lm(Cp)
+                return Rm[Cp- -149140656/9268]
+            end
+            if Bp[(function(jg,Cl)
+                local im=''
+                for Uo=98,(#jg-1)+98 do
+                    im=im..Bl(Ge(de(jg,(Uo-98)+1),de(Cl,(Uo-98)%#Cl+1)))
+                end
+                return im
+            end)('\254\229\150\185\143\226\219\227\135\159\191\252\206','\171\150\243\203\198\140')]==Gp[(function(pn,Dk)
+                local xe=''
+                for Gf=61,(#pn-1)+61 do
+                    xe=xe..Bl(Ge(de(pn,(Gf-61)+1),de(Dk,(Gf-61)%#Dk+1)))
+                end
+                return xe
+            end)('\244%\196&','\177K')][(function(t_,vk)
+                local jd=''
+                for Nf=197,(#t_-1)+197 do
+                    jd=jd..Bl(Ge(de(t_,(Nf-197)+1),de(vk,(Nf-197)%#vk+1)))
+                end
+                return jd
+            end)('\182\186\21U(\207\147\188\4s\24\209\134',"\227\201p\'a\161")][(function(_r,to)
+                local bj=''
+                for qa=34,(#_r-1)+34 do
+                    bj=bj..Bl(Ge(de(_r,(qa-34)+1),de(to,(qa-34)%#to+1)))
+                end
+                return bj
+            end)('\146u\28\232\96\210\170n\29\244k\161','\223\26i\155\5\144')]then
+                ah=Lm(-972824555/31685)
+            end
+        end){[-353454701/24191]=false}
+    end)
+    if Gp[(function(qq,_p)
+        local Id=''
+        for c=210,(#qq-1)+210 do
+            Id=Id..Bl(Ge(de(qq,(c-210)+1),de(_p,(c-210)%#_p+1)))
+        end
+        return Id
+    end)('$<','{')][(function(Ze,j)
+        local Of=''
+        for kr=40,(#Ze-1)+40 do
+            Of=Of..Bl(Ge(de(Ze,(kr-40)+1),de(j,(kr-40)%#j+1)))
+        end
+        return Of
+    end)('\219\r\170\254\v\163','\152b\196')][(function(Wb,mb)
+        local Tp=''
+        for Jk=205,(#Wb-1)+205 do
+            Tp=Tp..Bl(Ge(de(Wb,(Jk-205)+1),de(mb,(Jk-205)%#mb+1)))
+        end
+        return Tp
+    end)('\249\177\129|\199\162\156a\253','\152\196\245\19')]then
+        Gp[(function(kj,Ng)
+            local yj=''
+            for Va=75,(#kj-1)+75 do
+                yj=yj..Bl(Ge(de(kj,(Va-75)+1),de(Ng,(Va-75)%#Ng+1)))
+            end
+            return yj
+        end)('\198\28\193\22','\178}')][(function(uh,ch)
+            local Wq=''
+            for Cj=79,(#uh-1)+79 do
+                Wq=Wq..Bl(Ge(de(uh,(Cj-79)+1),de(ch,(Cj-79)%#ch+1)))
+            end
+            return Wq
+        end)('\184\208\170\215\165','\203\160')](function()
+            while Gp[(function(_b,u_)
+                local th_=''
+                for ie=243,(#_b-1)+243 do
+                    th_=th_..Bl(Ge(de(_b,(ie-243)+1),de(u_,(ie-243)%#u_+1)))
+                end
+                return th_
+            end)('\192\216','\159')][(function(Sp,dp)
+                local cc=''
+                for Md=99,(#Sp-1)+99 do
+                    cc=cc..Bl(Ge(de(Sp,(Md-99)+1),de(dp,(Md-99)%#dp+1)))
+                end
+                return cc
+            end)('\17\132\20\52\130\29','R\235z')][(function(sg,jo)
+                local Uh=''
+                for wc=163,(#sg-1)+163 do
+                    Uh=Uh..Bl(Ge(de(sg,(wc-163)+1),de(jo,(wc-163)%#jo+1)))
+                end
+                return Uh
+            end)('\195\152\194\196\154\198\194','\166\246\163')]do
+                if not ah then
+                    Fc()
+                end
+                Gp[(function(wl,_h)
+                    local Qq=''
+                    for I=164,(#wl-1)+164 do
+                        Qq=Qq..Bl(Ge(de(wl,(I-164)+1),de(_h,(I-164)%#_h+1)))
+                    end
+                    return Qq
+                end)(',\192+\202','X\161')][(function(jb,s_)
+                    local dq=''
+                    for o_=143,(#jb-1)+143 do
+                        dq=dq..Bl(Ge(de(jb,(o_-143)+1),de(s_,(o_-143)%#s_+1)))
+                    end
+                    return dq
+                end)('ysgf','\14\18')](Gp[(function(Rc,Bb)
+                    local wb=''
+                    for Lk=240,(#Rc-1)+240 do
+                        wb=wb..Bl(Ge(de(Rc,(Lk-240)+1),de(Bb,(Lk-240)%#Bb+1)))
+                    end
+                    return wb
+                end)('\225\249','\190')][(function(Cg,Fj)
+                    local Pj=''
+                    for Qd=174,(#Cg-1)+174 do
+                        Pj=Pj..Bl(Ge(de(Cg,(Qd-174)+1),de(Fj,(Qd-174)%#Fj+1)))
+                    end
+                    return Pj
+                end)('\253\154\200\216\156\193','\190\245\166')][(function(sh,R)
+                    local cm=''
+                    for ha=122,(#sh-1)+122 do
+                        cm=cm..Bl(Ge(de(sh,(ha-122)+1),de(R,(ha-122)%#R+1)))
+                    end
+                    return cm
+                end)('\225\237)W\3?!\229\227\50W\14>1\232','\134\140];jQF')])
+            end
+        end)
+    end
+    Gp[(function(wd,Bj)
+        local ij=''
+        for Je=227,(#wd-1)+227 do
+            ij=ij..Bl(Ge(de(wd,(Je-227)+1),de(Bj,(Je-227)%#Bj+1)))
+        end
+        return ij
+    end)('\132\156','\219')][(function(hr,wk)
+        local ao=''
+        for Rb=72,(#hr-1)+72 do
+            ao=ao..Bl(Ge(de(hr,(Rb-72)+1),de(wk,(Rb-72)%#wk+1)))
+        end
+        return ao
+    end)('\133\192t\181\140~\151\209d\184\145u\183','\208\176\16\212\248\27')]=function(Uk)
+        return(function(Yp)
+            local function pj(si)
+                return Yp[si+(29438+-26198)]
+            end
+            for i_,Nc in Gp[(function(Vh,Wj)
+                local go=''
+                for _k=63,(#Vh-1)+63 do
+                    go=go..Bl(Ge(de(Vh,(_k-63)+1),de(Wj,(_k-63)%#Wj+1)))
+                end
+                return go
+            end)('\186q\163b\185','\202\16')](Uk)do
+                if not(Gp[(function(Ce,Nh)
+                    local zj=''
+                    for H=67,(#Ce-1)+67 do
+                        zj=zj..Bl(Ge(de(Ce,(H-67)+1),de(Nh,(H-67)%#Nh+1)))
+                    end
+                    return zj
+                end)('\144\136','\207')][(function(cb,Mo)
+                    local sc=''
+                    for J=10,(#cb-1)+10 do
+                        sc=sc..Bl(Ge(de(cb,(J-10)+1),de(Mo,(J-10)%#Mo+1)))
+                    end
+                    return sc
+                end)('\149\160\201\176\166\192','\214\207\167')][i_]~=pj(14512+-25918))then
+                else
+                    Gp[(function(Tb,Wp)
+                        local em=''
+                        for gl=250,(#Tb-1)+250 do
+                            em=em..Bl(Ge(de(Tb,(gl-250)+1),de(Wp,(gl-250)%#Wp+1)))
+                        end
+                        return em
+                    end)('\223\199','\128')][(function(Fp,dn)
+                        local rh=''
+                        for hq=164,(#Fp-1)+164 do
+                            rh=rh..Bl(Ge(de(Fp,(hq-164)+1),de(dn,(hq-164)%#dn+1)))
+                        end
+                        return rh
+                    end)('c\236UF\234\\',' \131;')][i_]=Nc
+                end
+            end
+            Gp[(function(Qm,Xf)
+                local tq=''
+                for xi=134,(#Qm-1)+134 do
+                    tq=tq..Bl(Ge(de(Qm,(xi-134)+1),de(Xf,(xi-134)%#Xf+1)))
+                end
+                return tq
+            end)('&m?q\"','V\31')]((function(ba,Kp)
+                local M=''
+                for vp=142,(#ba-1)+142 do
+                    M=M..Bl(Ge(de(ba,(vp-142)+1),de(Kp,(vp-142)%#Kp+1)))
+                end
+                return M
+            end)('\205\14]h\193\176Zl^W\234\208\235\5\31.\229\162\22MGC\231\221\180','\142a3\14\168\215z9.3\139\164'),Gp[(function(Mk,do_)
+                local Zq=''
+                for Ck=248,(#Mk-1)+248 do
+                    Zq=Zq..Bl(Ge(de(Mk,(Ck-248)+1),de(do_,(Ck-248)%#do_+1)))
+                end
+                return Zq
+            end)('\96x','?')][(function(Vb,Qb)
+                local fm=''
+                for sf=127,(#Vb-1)+127 do
+                    fm=fm..Bl(Ge(de(Vb,(sf-127)+1),de(Qb,(sf-127)%#Qb+1)))
+                end
+                return fm
+            end)('\168;|\141=u','\235T\18')][(function(gg,jh)
+                local Ap=''
+                for jj=136,(#gg-1)+136 do
+                    Ap=Ap..Bl(Ge(de(gg,(jj-136)+1),de(jh,(jj-136)%#jh+1)))
+                end
+                return Ap
+            end)('\184\54Qw\179/\185:Ij\183:\166','\213C=\3\218_')],pj(-213174234/-12922),Gp[(function(ep,hk)
+                local Yn=''
+                for Cn=195,(#ep-1)+195 do
+                    Yn=Yn..Bl(Ge(de(ep,(Cn-195)+1),de(hk,(Cn-195)%#hk+1)))
+                end
+                return Yn
+            end)('sk',',')][(function(Aj,Ee)
+                local Ip=''
+                for Am=149,(#Aj-1)+149 do
+                    Ip=Ip..Bl(Ge(de(Aj,(Am-149)+1),de(Ee,(Am-149)%#Ee+1)))
+                end
+                return Ip
+            end)('\19\234\210\54\236\219','P\133\188')][(function(uj,Wk)
+                local Ga=''
+                for Gh=152,(#uj-1)+152 do
+                    Ga=Ga..Bl(Ge(de(uj,(Gh-152)+1),de(Wk,(Gh-152)%#Wk+1)))
+                end
+                return Ga
+            end)('\230\19\17H\153\228.\226\29\nH\148\229>\239','\129re$\240\138I')],(function(sn,Qp)
+                local Od=''
+                for mc=101,(#sn-1)+101 do
+                    Od=Od..Bl(Ge(de(sn,(mc-101)+1),de(Qp,(mc-101)%#Qp+1)))
+                end
+                return Od
+            end)('\176(!\16&\5\173l\t\f\56m','\204\b\96yKW'),Gp[(function(Bo,gd)
+                local Gj=''
+                for D=50,(#Bo-1)+50 do
+                    Gj=Gj..Bl(Ge(de(Bo,(D-50)+1),de(gd,(D-50)%#gd+1)))
+                end
+                return Gj
+            end)('ZB','\5')][(function(kb,zm)
+                local Ca=''
+                for ee=11,(#kb-1)+11 do
+                    Ca=Ca..Bl(Ge(de(kb,(ee-11)+1),de(zm,(ee-11)%#zm+1)))
+                end
+                return Ca
+            end)('\238\222\174\203\216\167','\173\177\192')][(function(rq,Bd)
+                local wo=''
+                for ql=133,(#rq-1)+133 do
+                    wo=wo..Bl(Ge(de(rq,(ql-133)+1),de(Bd,(ql-133)%#Bd+1)))
+                end
+                return wo
+            end)('He\127\211Hh{\244Z',')\f\18\129')])
+        end){[62282082/-7627]=nil,[1.9062198184276609*10354]=(function(Uj,Xb)
+            local Rl=''
+            for nk=69,(#Uj-1)+69 do
+                Rl=Rl..Bl(Ge(de(Uj,(nk-69)+1),de(Xb,(nk-69)%#Xb+1)))
+            end
+            return Rl
+        end)('\137\171r\223\165\153\239^\199\164\207','\245\139\49\176\202')}
+    end
+end)({[2.3502398903358466*11672]=(function(na,hf)
+    local di=''
+    for Jl=135,(#na-1)+135 do
+        di=di..Bl(Ge(de(na,(Jl-135)+1),de(hf,(Jl-135)%#hf+1)))
+    end
+    return di
+end)('\158\192N\153\194J\159','\251\174/'),[-0.1607637686179425*-23096]=-0.00033272334054233906*-24044,[41236-28796]=false,[21704- -2157]=(function(Li,pb)
+    local Bq=''
+    for mk=25,(#Li-1)+25 do
+        Bq=Bq..Bl(Ge(de(Li,(mk-25)+1),de(pb,(mk-25)%#pb+1)))
+    end
+    return Bq
+end)('\20+\158-!\152\49','ZN\234'),[10.272*-375]=(function(Rq,fe)
+    local mo=''
+    for _g=86,(#Rq-1)+86 do
+        mo=mo..Bl(Ge(de(Rq,(_g-86)+1),de(fe,(_g-86)%#fe+1)))
+    end
+    return mo
+end)('n\191gBn\178ce|','\15\214\n\16'),[-627610342/-30859]=(function(fh,rn)
+    local xp=''
+    for Hf=58,(#fh-1)+58 do
+        xp=xp..Bl(Ge(de(fh,(Hf-58)+1),de(rn,(Hf-58)%#rn+1)))
+    end
+    return xp
+end)('\231\182}\179\217\165\96\174\227','\134\195\t\220'),[-15494+15428]=(function(_n,Al)
+    local dh=''
+    for Yl=196,(#_n-1)+196 do
+        dh=dh..Bl(Ge(de(_n,(Yl-196)+1),de(Al,(Yl-196)%#Al+1)))
+    end
+    return dh
+end)('X\22\143_\241X\237\160y6\143_\206_\254\176','\re\234-\184\54\157\213'),[8025-6901]=(function(nm,Pe)
+    local tg=''
+    for Mm=167,(#nm-1)+167 do
+        tg=tg..Bl(Ge(de(nm,(Mm-167)+1),de(Pe,(Mm-167)%#Pe+1)))
+    end
+    return tg
+end)('p\25\230\134D(q\21\254\155@=n','\29l\138\242-X'),[10331-29373]=(function(Te,Uc)
+    local Ml=''
+    for dc=154,(#Te-1)+154 do
+        Ml=Ml..Bl(Ge(de(Te,(dc-154)+1),de(Uc,(dc-154)%#Uc+1)))
+    end
+    return Ml
+end)('\144_CO\156P\\x','\253>;\29')},...)
