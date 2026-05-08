@@ -1,4 +1,4 @@
-_G.Config = _G.Config or {
+_G.Config = {
     gatlingcooldown = 0.1,
     multiplytimes = 50,
     norecoil = true,
